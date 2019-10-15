@@ -17,11 +17,13 @@ public class GetProductTest extends TestBase {
 	public void fn_verify_login() throws Exception{
 		try
 		{
+			int id=43900;
 			String baseuri=prep.getProperty("uri");
 			RestAssured.baseURI=baseuri;
 			given().
 			when().get("/products").then().assertThat().statusCode(200).and().
-			body("data.id",equalTo("43900"));
+			body("data[0].id".trim(),equalTo(id)).and().
+			body("data[0].name",equalTo("Duracell - AAA Batteries (4-Pack)"));
 	        
 	
 	       
