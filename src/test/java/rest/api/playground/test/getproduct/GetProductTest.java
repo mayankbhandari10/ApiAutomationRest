@@ -17,8 +17,11 @@ public class GetProductTest extends TestBase {
 	public void fn_verify_login() throws Exception{
 		try
 		{
-			RestAssured.baseURI="";
-			 
+			String baseuri=prep.getProperty("uri");
+			RestAssured.baseURI=baseuri;
+			given().
+			when().get("/products").then().assertThat().statusCode(200).and().
+			body("data.id",equalTo("43900"));
 	        
 	
 	       

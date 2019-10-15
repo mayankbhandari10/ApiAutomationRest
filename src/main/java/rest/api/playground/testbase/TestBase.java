@@ -6,7 +6,7 @@ import java.util.Properties;
 public class TestBase {
 	public static Properties prep;
 	String path = System.getProperty("user.dir");
-	private final String ProperfilePath= path+"\\src\\main\\java\\com\\automation\\prac\\qa\\config\\config.properties";
+	private final String ProperfilePath= path+"\\\\src\\main\\java\\rest\\api\\playground\\config\\config.properties";
 	
 	public TestBase() throws Exception 
 	{
