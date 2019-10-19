@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3212" started-at="2019-10-15T19:19:10Z" finished-at="2019-10-15T19:19:13Z">
+  <suite name="Default suite" duration-ms="61450" started-at="2019-10-19T09:38:46Z" finished-at="2019-10-19T09:39:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3212" started-at="2019-10-15T19:19:10Z" finished-at="2019-10-15T19:19:13Z">
+    <test name="Default test" duration-ms="61450" started-at="2019-10-19T09:38:46Z" finished-at="2019-10-19T09:39:47Z">
       <class name="rest.api.playground.test.getproduct.GetProductTest">
-        <test-method status="PASS" signature="fn_verify_login()[pri:0, instance:rest.api.playground.test.getproduct.GetProductTest@4f933fd1]" name="fn_verify_login" duration-ms="3188" started-at="2019-10-16T00:49:10Z" description="verify the login" finished-at="2019-10-16T00:49:13Z">
+        <test-method status="PASS" signature="fn_verify_login()[pri:0, instance:rest.api.playground.test.getproduct.GetProductTest@73846619]" name="fn_verify_login" duration-ms="60110" started-at="2019-10-19T15:08:46Z" description="verify the login" finished-at="2019-10-19T15:09:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fn_verify_login -->
+        <test-method status="PASS" signature="fn_verify_getRequest()[pri:0, instance:rest.api.playground.test.getproduct.GetProductTest@73846619]" name="fn_verify_getRequest" duration-ms="1277" started-at="2019-10-19T15:09:46Z" description="verify the get request" finished-at="2019-10-19T15:09:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fn_verify_getRequest -->
       </class> <!-- rest.api.playground.test.getproduct.GetProductTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
