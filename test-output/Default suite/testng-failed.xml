@@ -5,7 +5,7 @@
     <classes>
       <class name="rest.api.playground.test.getproduct.GetProductTest">
         <methods>
-          <include name="fn_verify_getRequest"/>
+          <include name="fn_verify_getRequest_with_query_parameters"/>
         </methods>
       </class> <!-- rest.api.playground.test.getproduct.GetProductTest -->
     </classes>

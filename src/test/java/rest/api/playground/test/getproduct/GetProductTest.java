@@ -31,7 +31,7 @@ public class GetProductTest extends TestBase {
 			when().get("/products").then().assertThat().statusCode(200).and().
 			body("data[0].id".trim(),equalTo(id)).and().
 			body("data[0].name",equalTo("Duracell - AAA Batteries (4-Pack)"));
-	//		log.info("************respone**************"+responseBody);
+			//		log.info("************respone**************"+responseBody);
 
 		}
 		catch(Exception e)
@@ -40,7 +40,7 @@ public class GetProductTest extends TestBase {
 		}
 	}
 
-	@Test(priority=2, description="verify the get request and printing the response ") //Need to be modified this...
+	//@Test(priority=2, description="verify the get request and printing the response ") //Need to be modified this...
 	public void fn_verify_getRequest() throws Exception{
 		int id=43900;
 
@@ -51,7 +51,7 @@ public class GetProductTest extends TestBase {
 			RestAssured.baseURI=baseuri;
 			RequestSpecification httpRequest = RestAssured.given();
 			Response response = httpRequest.request(Method.GET, "/products");
-			response.getHeaders();
+			response.then().assertThat().statusCode(200).and().contentType("application/json");
 			int status=response.statusCode();
 			System.out.println(status);
 			String responseBody = response.getBody().prettyPrint();
@@ -64,7 +64,7 @@ public class GetProductTest extends TestBase {
 			throw e;	
 		}
 	}
-	//@Test(priority=3, description="verify the get request with query parametrs ")
+	@Test(priority=3, description="verify the get request with query parametrs ")
 	public void fn_verify_getRequest_with_query_parameters() throws Exception{
 		int id=43900;
 
@@ -72,11 +72,13 @@ public class GetProductTest extends TestBase {
 		String baseuri=prep.getProperty("uri");
 		try
 		{
-			Response response = null;
-			response = RestAssured.given()
-					.when().queryParam("limit", 2)
-					.get("/products");
-			log.info("The Query parameter response id ************************"+response);
+			RestAssured.baseURI=baseuri;
+			RequestSpecification httpRequest= RestAssured.given().queryParam("$limit", 3);
+			
+			Response response = httpRequest.request(Method.GET, "/products");
+			String responseBody = response.getBody().prettyPrint();
+			System.out.println(responseBody);
+			log.info("************respone**************"+responseBody);
 		}
 		catch(Exception e)
 		{

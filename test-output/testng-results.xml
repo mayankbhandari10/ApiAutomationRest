@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3289" started-at="2019-11-17T17:26:01Z" finished-at="2019-11-17T17:26:04Z">
+  <suite name="Default suite" duration-ms="48117" started-at="2019-11-17T18:19:06Z" finished-at="2019-11-17T18:19:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3289" started-at="2019-11-17T17:26:01Z" finished-at="2019-11-17T17:26:04Z">
+    <test name="Default test" duration-ms="48117" started-at="2019-11-17T18:19:06Z" finished-at="2019-11-17T18:19:55Z">
       <class name="rest.api.playground.test.getproduct.GetProductTest">
-        <test-method status="PASS" signature="fn_verify_getRequest()[pri:0, instance:rest.api.playground.test.getproduct.GetProductTest@73846619]" name="fn_verify_getRequest" duration-ms="3261" started-at="2019-11-17T22:56:01Z" description="verify the get request and printing the response " finished-at="2019-11-17T22:56:04Z">
+        <test-method status="PASS" signature="fn_verify_getRequest_with_query_parameters()[pri:0, instance:rest.api.playground.test.getproduct.GetProductTest@73846619]" name="fn_verify_getRequest_with_query_parameters" duration-ms="48076" started-at="2019-11-17T23:49:07Z" description="verify the get request with query parametrs " finished-at="2019-11-17T23:49:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fn_verify_getRequest -->
+        </test-method> <!-- fn_verify_getRequest_with_query_parameters -->
       </class> <!-- rest.api.playground.test.getproduct.GetProductTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
