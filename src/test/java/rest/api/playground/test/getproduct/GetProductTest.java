@@ -15,22 +15,24 @@ public class GetProductTest extends TestBase {
 
 	}
 
-	@Test(priority=1, description="verify the login")
+	//@Test(priority=1, description="verify the Duracell batteries")
 	public void fn_verify_login() throws Exception{
 		int id=43900;
 		log.info("*****************id is*******************"+id);
 		String baseuri=prep.getProperty("uri");
+		Response response = null;
 		try
 		{
-		
-		RestAssured.baseURI=baseuri;
-		log.info("**********************log started***************************");
-		log.info("Base uri is"+baseuri);
-		given().
-		when().get("/products").then().assertThat().statusCode(200).and().
-		body("data[0].id".trim(),equalTo(id)).and().
-		body("data[0].name",equalTo("Duracell - AAA Batteries (4-Pack)"));
-		
+
+			RestAssured.baseURI=baseuri;
+			log.info("**********************log started***************************");
+			log.info("Base uri is"+baseuri);
+			given().
+			when().get("/products").then().assertThat().statusCode(200).and().
+			body("data[0].id".trim(),equalTo(id)).and().
+			body("data[0].name",equalTo("Duracell - AAA Batteries (4-Pack)"));
+	//		log.info("************respone**************"+responseBody);
+
 		}
 		catch(Exception e)
 		{
@@ -38,21 +40,43 @@ public class GetProductTest extends TestBase {
 		}
 	}
 
-	@Test(priority=2, description="verify the get request")
+	@Test(priority=2, description="verify the get request and printing the response ") //Need to be modified this...
 	public void fn_verify_getRequest() throws Exception{
 		int id=43900;
-		
+
 		log.info("*****************id is*******************"+id);
 		String baseuri=prep.getProperty("uri");
 		try
 		{
-		
+			RestAssured.baseURI=baseuri;
 			RequestSpecification httpRequest = RestAssured.given();
 			Response response = httpRequest.request(Method.GET, "/products");
-			String responseBody = response.getBody().asString();
+			response.getHeaders();
+			int status=response.statusCode();
+			System.out.println(status);
+			String responseBody = response.getBody().prettyPrint();
 			log.info("************respone**************"+responseBody);
-		
-		
+
+
+		}
+		catch(Exception e)
+		{
+			throw e;	
+		}
+	}
+	//@Test(priority=3, description="verify the get request with query parametrs ")
+	public void fn_verify_getRequest_with_query_parameters() throws Exception{
+		int id=43900;
+
+		log.info("*****************id is*******************"+id);
+		String baseuri=prep.getProperty("uri");
+		try
+		{
+			Response response = null;
+			response = RestAssured.given()
+					.when().queryParam("limit", 2)
+					.get("/products");
+			log.info("The Query parameter response id ************************"+response);
 		}
 		catch(Exception e)
 		{

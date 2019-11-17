@@ -1,155 +1,499 @@
-2019-10-19 15:08:46,356  INFO [main] devpinoyLogger:21 - *****************id is*******************43900
-2019-10-19 15:08:48,129  INFO [main] devpinoyLogger:27 - **********************log started***************************
-2019-10-19 15:08:48,134  INFO [main] devpinoyLogger:28 - Base uri ishttp://localhost:3030
-2019-10-19 15:08:52,536 DEBUG [main] BasicClientConnectionManager:164 - Get connection for route {}->http://localhost:3030
-2019-10-19 15:08:52,592 DEBUG [main] DefaultClientConnectionOperator:176 - Connecting to localhost:3030
-2019-10-19 15:08:52,651 DEBUG [main] RequestAddCookies:122 - CookieSpec selected: ignoreCookies
-2019-10-19 15:08:52,655 DEBUG [main] RequestAuthCache:76 - Auth cache not set in the context
-2019-10-19 15:08:52,657 DEBUG [main] RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
-2019-10-19 15:08:52,661 DEBUG [main] RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
-2019-10-19 15:08:52,663 DEBUG [main] DefaultHttpClient:684 - Attempt 1 to execute request
-2019-10-19 15:08:52,665 DEBUG [main] DefaultClientConnection:276 - Sending request: GET /products HTTP/1.1
-2019-10-19 15:08:52,668 DEBUG [main] wire:72 -  >> "GET /products HTTP/1.1[\r][\n]"
-2019-10-19 15:08:52,676 DEBUG [main] wire:72 -  >> "Accept: */*[\r][\n]"
-2019-10-19 15:08:52,678 DEBUG [main] wire:72 -  >> "Content-Length: 0[\r][\n]"
-2019-10-19 15:08:52,679 DEBUG [main] wire:72 -  >> "Host: localhost:3030[\r][\n]"
-2019-10-19 15:08:52,680 DEBUG [main] wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
-2019-10-19 15:08:52,694 DEBUG [main] wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
-2019-10-19 15:08:52,695 DEBUG [main] wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2019-10-19 15:08:52,697 DEBUG [main] wire:72 -  >> "[\r][\n]"
-2019-10-19 15:08:52,698 DEBUG [main] headers:280 - >> GET /products HTTP/1.1
-2019-10-19 15:08:52,699 DEBUG [main] headers:283 - >> Accept: */*
-2019-10-19 15:08:52,699 DEBUG [main] headers:283 - >> Content-Length: 0
-2019-10-19 15:08:52,700 DEBUG [main] headers:283 - >> Host: localhost:3030
-2019-10-19 15:08:52,701 DEBUG [main] headers:283 - >> Connection: Keep-Alive
-2019-10-19 15:08:52,702 DEBUG [main] headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
-2019-10-19 15:08:52,702 DEBUG [main] headers:283 - >> Accept-Encoding: gzip,deflate
-2019-10-19 15:09:41,977 DEBUG [main] wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
-2019-10-19 15:09:41,993 DEBUG [main] wire:72 -  << "X-Powered-By: Express[\r][\n]"
-2019-10-19 15:09:41,993 DEBUG [main] wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2019-10-19 15:09:41,993 DEBUG [main] wire:72 -  << "Allow: GET,POST,PUT,PATCH,DELETE[\r][\n]"
-2019-10-19 15:09:41,993 DEBUG [main] wire:72 -  << "Vary: Accept, Accept-Encoding[\r][\n]"
-2019-10-19 15:09:41,993 DEBUG [main] wire:72 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2019-10-19 15:09:42,009 DEBUG [main] wire:72 -  << "ETag: W/"2caa-TezTeq2vIiVxSLYtAw9IUkVotFc"[\r][\n]"
-2019-10-19 15:09:42,009 DEBUG [main] wire:72 -  << "Content-Encoding: gzip[\r][\n]"
-2019-10-19 15:09:42,009 DEBUG [main] wire:72 -  << "Date: Sat, 19 Oct 2019 09:39:41 GMT[\r][\n]"
-2019-10-19 15:09:42,009 DEBUG [main] wire:72 -  << "Connection: keep-alive[\r][\n]"
-2019-10-19 15:09:42,009 DEBUG [main] wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
-2019-10-19 15:09:42,009 DEBUG [main] wire:72 -  << "[\r][\n]"
-2019-10-19 15:09:42,009 DEBUG [main] DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
-2019-10-19 15:09:42,009 DEBUG [main] headers:264 - << HTTP/1.1 200 OK
-2019-10-19 15:09:42,009 DEBUG [main] headers:267 - << X-Powered-By: Express
-2019-10-19 15:09:42,009 DEBUG [main] headers:267 - << Access-Control-Allow-Origin: *
-2019-10-19 15:09:42,009 DEBUG [main] headers:267 - << Allow: GET,POST,PUT,PATCH,DELETE
-2019-10-19 15:09:42,024 DEBUG [main] headers:267 - << Vary: Accept, Accept-Encoding
-2019-10-19 15:09:42,024 DEBUG [main] headers:267 - << Content-Type: application/json; charset=utf-8
-2019-10-19 15:09:42,024 DEBUG [main] headers:267 - << ETag: W/"2caa-TezTeq2vIiVxSLYtAw9IUkVotFc"
-2019-10-19 15:09:42,024 DEBUG [main] headers:267 - << Content-Encoding: gzip
-2019-10-19 15:09:42,024 DEBUG [main] headers:267 - << Date: Sat, 19 Oct 2019 09:39:41 GMT
-2019-10-19 15:09:42,024 DEBUG [main] headers:267 - << Connection: keep-alive
-2019-10-19 15:09:42,024 DEBUG [main] headers:267 - << Transfer-Encoding: chunked
-2019-10-19 15:09:42,040 DEBUG [main] DefaultHttpClient:511 - Connection can be kept alive indefinitely
-2019-10-19 15:09:42,122 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
-2019-10-19 15:09:42,130 DEBUG [main] wire:72 -  << "a[\r][\n]"
-2019-10-19 15:09:42,131 DEBUG [main] wire:86 -  << "[0x1f]"
-2019-10-19 15:09:42,132 DEBUG [main] wire:86 -  << "[0x8b]"
-2019-10-19 15:09:42,133 DEBUG [main] wire:86 -  << "[0x8]"
-2019-10-19 15:09:42,135 DEBUG [main] wire:86 -  << "[0x0]"
-2019-10-19 15:09:42,136 DEBUG [main] wire:72 -  << "[0x0][0x0][0x0][0x0][0x0][\n]"
-2019-10-19 15:09:42,137 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2019-10-19 15:09:44,072 DEBUG [main] wire:72 -  << "[\r][\n]"
-2019-10-19 15:09:44,087 DEBUG [main] wire:72 -  << "6de[\r][\n]"
-2019-10-19 15:09:44,087 DEBUG [main] wire:72 -  << "[0xed][0x9a]mo[0xdb]6[0x10][0xc7][0xbf][\n]"
-2019-10-19 15:09:44,087 DEBUG [main] wire:86 -  << "[0xa1][0x17]E[0xb][0x84]6[0xa9]'K6[0x8a][0xc1]q[0xba][0xb5]h[0xbd][0x19]I[0xd7][0x15]{@AKL[0xcc]Y[0x12][0x5][0x8a][0x8a][0xe7][0x15][0xfb][0xee];J[0xb2][0xad]$nbwN[0xf3]b~[0x13]+$[0xcd][0xfb][0xf3][0xc4][0xfb][0xe9][0x8e][0xd6]gKK[0xcd][0x12][0xab][0xef][0xd1][0xd0][0xeb][0x9d]X[0x89]H[0x85][0xb6][0xfa][0x94][0x9c]X[0xc5]\[0xe4]V[0x1f].b[0xa6][0x99][0xd5][0xff][0xed][0xb3]%b[0xab][0xef]:![0x81][0xb6][0x8c][0xa5][0xdc][0xea][g[0xa5]b[0x11]O[0x12][0x84][0xd1]p8D[0xa7]Lk[0xae][0x4]/[0xd0]s[0x17]OX4a[0x9d]Xz[0x99][0x9b][0xa1][0xaf][0x99][0x8a][0x90]2[0x86][0x96]\[0x89][0x8][0x9a][0xbc][0x8e][0x1b][0x9e]Xe[0x1e]A/q[0xa9][0xe3]8[0xae][0xed][0x12][0x1a][0xc2][0x88]b&[0xf2]\dW[0xb5]}^DJ[0xe4]Z[0xc8][0xc]F[0x8e]d[0x9a]3-[0xa6][0x9]G[0xb][0xa1]g[0xa8][0xe0][0x9][0x8f]4[0xaa][0xfe]*[0x99][0x89][0x8][0xc5][0xfc][0x1a][0xe6]/[0x6][0x95][0xa4]B[0xfc][0xcd][0x7][0xe8][0xec][0xe7][0xf3][0xe1][0xbb][0x9f]Fo[0xd1]D.[0xb8]B[0x13][0xc5][0xb][0xae][0xae]9[0xd2]<[0x9a]e2[0x91]W[0xcb][0x1]rq[0xe][0x8a][0xc1]x[0xca][0xb2][0xf2][0x92]E[0xba]T\[0xb5][0xd6]hzd[0xcc][0xc1]W[0xd6][0xf8]G[0x10]JN[0xdd]_[0xa1][0xad]T[0xa6]e[0xa6]u[0xde][0xef]v[0x17][0x8b]Eg[0xca][0xb]=-[0x97][0x9d]H[0xa6][0xdd]Bh[0xde][0x8d][0x9b][0x9]0c[0xc]OW.[0xc2][0xb5][0xbd]n[0xe5][0xd0]N[0xfe][0x9d][0x88]_R[0xe2]Q'pI[0xcf][0xa5][0xae][0xf7][0xac][0x98][0x97]o[0xe2][0x97]U[0xf7][0xb3]([0xcd]_[0x9e][0x8f]?[0x8e]F`P[0xa4][0xec][0x8a]oL[0x8a][0xf4][0xaa]3[0x9d].[0xb][\r]N[0x89]*[0xa3][0xa7] [0xe0][0xb4]\~[0xfa][0xf9][0xa2][[0x8d]-[0xba][0xb9][0x92]q[0x19][0xe9][0xa2]2V[[0xfc]T[0xb0][0xce][0x9f][0xf9][0x15][0xcc][0x17])[0xce]4[0x8f][0x87]p[0xdb]-[0x9b]P[0x1f]S[0x8a]i[0xef]=[0xed][0xf5][0xbd][0xa0]O[0x9c][0x8e][0x1d][0x6][0xd5]:[0xf3]x[0x97]a[0x11][0xc][0xba][0x92]f[0x81][0xeb]-c[0xb1])[0xb4][0x12][0x9b][0x4][0x84][0xd8][0xd6]z[0xef][0xc][0x93]9KD[0xc6]7[0xbb][0xe6]~1[0xbd]>q;v[0xe0]= f3[0xec][0x9f][0x93][0xc6]~[0x1e][0xa5] [0xc0]v[0x83][0x1e]![0xc4][0x3][0x11]t[0xa3][0xe2][0xb5],[0xb][0xbe]`j[0x7][0xeb]^[0xc7][0x9][0xc3]"
-2019-10-19 15:09:44,102 DEBUG [main] wire:72 -  << "[0x87][0xad]7[0xc3]nYw[0x88][0xe3][0xd7][0xd6][0xc9]m[0xeb]3[0x99][0xc4][0xdf][0xca][0x9][0xe][0xb5][0x9d]Z[0x6][0xf5]62F2[0xcb] |x[0x8c]^[0xcb][0x94][0xa3]gh[0xf][0xaf][0xec])[0xe7][0x8f][0x95] 7[0xf0][0x9c]/[0x80][0x4][0xd1][0x8e][0xf7][0x1][0x8d]d[0x9e]s[0xf5]^[0xe6][0xff][0x1d]+[0xd4]#[0xb4]w?V[0xde][0xc9][0xec][\n]"
-2019-10-19 15:09:44,118 DEBUG [main] wire:72 -  << "'[0xac][0xd0][0xd0][0x8d]x[0xc6][0x95]A[0xc2].[0xd8][0xb8][0x94][\n]"
-2019-10-19 15:09:44,118 DEBUG [main] wire:72 -  << "i[0xb9],NP[0x94][0xc8]h[0xe][0x9f][0x8a][0xc5]B[0xc2][0xe7][0x15],[0xcd][0xfc][0xcb]S[0xa9][0xcd][0xc5][0xe4]lX [0x96][0xc5]([0x95][0x8a][0xef][0xc8][0x19]P[0xfe]5[0x9c][0xc1][0x14]{[0xd7]8[0xaa]<[0xa8]e[0xbe][0x85]:[0xc6][0xfb]+[0xea][0x84][0xa1][0x13]x[0xb6][0x1f][0x84]A[0xb0][0xa2][0x8e][0xe9]>[0x1c]u`[0xb6][0xda][0xe2][0x91]:G[0xea]<)u[0xa8][0xdd][0xf3][0x83][0xde][0x17][0xb0][0xd3][0xe2]L[0xf0]0gzw8[0x13][0xd8][0xc0][0x19][0xf7][0x80][0xe9][0xcb][0x1e][0xd9]K[0xb0]O[0xf6]RQ%[0xd8][0x9f]*[0x1b][0x8c][0xd4][0xe6][0xba][0xb5];of/[0xae][0xe7][0xf7][0xfc][0x86]#u[0xff][0xc1]@b[0xa6]kl[0x1e]Ir$[0xc9][0xd3][0x92][0x4]b[0x9d]zk[0x9][0xaf]L[0xca][0x0][0xd1][0xaa][0x0]%[0xe3][0xe1][0xc7][0x16]K [0x8c]wI[[0xdc]N[0xb8][0xc1][0x89][0x13][0x6][0xc6][0xd1][0xd4][0xb1][0x1f][0xa8][0x86][0xea][0xc7][0xb9][0xb1][0xc1]V[0xdb]q[0x1d][0xa4][0x83][0xe6]r[0x9][0xa0]([0xe0][0x13][0x89],J[0xca][0x98][0xc7]w)[0xb1]V[0xdf][0xc2][0xc4][0xab][0x90][0x9e]N[0xb0][0xbb][0x13]$[0xf8][0xea][0xfb]8e[0xb5]0[0x1][0xcc]h[0x12][0x8e][0xda]][0xb7]H[0xe1][0xdb][0xb4][0xb7]"E[0xd5]8R[0xc0]t[0x8d][0xcd]#)[0x8e][0xa4]xZR@r[0xbd][0xbd][0xd4][0x19][0xed]Y[0xda][0x4]mF[0xd4][0xa5][0x8d]K[0xe]yb2z[0xac][0xf3][0x12][\n]"
-2019-10-19 15:09:44,118 DEBUG [main] wire:72 -  << ":[0xcf][0xf7][0xad]c[0xa2][0xbb]uK[0xed][0xcb][0xdb][0x18]q[0x83]u[0xc2]Q[0xf5][0x1f][0xe]#0]c[0xf3][0x88][0x91]#F[0x9e][0x1c]#[0xfe][0xd6][0xd2][0xe5]lO[0x8c][0x84]w1[0x2]k[0xa4][0xe4]`[0x18]9{4[0x8c]8_[0x81][0x91]x;F[0xfc][0xdb]u[0x8b][0xef]y[0xb4][0x85][0x11][0xff][0x80]u[0xcb][\n]"
-2019-10-19 15:09:44,118 DEBUG [main] wire:86 -  << "#[0xfe][0xb1]n9b[0xe4]i1[0xe2][0x90][0x90][0xf8][0xf6]Z[0xc2][0x4][0x82][0x9b]WU[0x8b][0xfb][0xbb][0x85][0x1c][0xfc][0xb][[0xa2][0x8b]RA r<[0x96]e[0xa6][0xd1]E[0xce][0xd9][0x9c][0xab][0xa2][0x8e][0xfa]7[0xe3][0xc9][0x4][0x19][0x14]H"
-2019-10-19 15:09:44,118 DEBUG [main] wire:72 -  << "[0x13]dp[0x95][0x19][0xe8]L[0x98]P/`[0x8e][0xd3][0xa4][0x8e][0xe5]/[0xa2][0x87][0xba]7[0xea][0x1c]j{P[0x3][0xf8][0x1e]u[0xe9][0xfd][0xf0][0x9][0xc8]/[0x8]J[0xb][0x91][0x96])[0xca]+[0x98]<[0xb7][0xa1][0xe9]||[0xf1]bP)[0xaf]tEk][0x11][0xe8]B[0xb])/[0xb9][0x1a] [0xa7]kF[0xcc][0xa4][0xca][0x90]^p[0xae][0xeb]2[0xe7]&n[0x1a]?[0xb4]h[0xf3][0xfe][0x2][0xb4][0x9][0xd9][0x89]5y[0xfd]m[0xc0][0x8b][0x83][0x17]l[0x89][0x8b][0xc6][0x83][0xa9][0xf1] .[0x1a][0xf]b[0xe3]A,[0xd2]<[0xc7]k[0xa5][0xd8](-[0x80]JB[0xe1][0xa9][0xf1]^[0xb7][0xbe]A[\r][0x9b]l[0x1a][0xf8][0xae]c[0xbb][0xc4][0xf6]Vg[0xb3]u[0xff][0xc1][0xd8]D`[0xbe][0xea][0xf]L[0xfa][0xed][0xe1]d[0x82][0xa2][0xf2][0xf1]*"[0x98]B[0xaf][0xd6]O[0x94][0x2]B[0xe2][0x87][0xc9][0xc5]c[0x85][0xe6]J[0x82]}G[0xc2][0xb0][0x8c][0x85][0xfc][0x6]f[0xbd][0x9b]fW[0xa1][0xf6][0xc8],[0xf2]+[0x1c][0xde]b[0x91][0x9][0x91]=5[0xc0][0xce][0xdc]EC5[0xac][0x5] j[0xdb][0xe1][0xd6]r([0xfc][0xd0]Nd[0xec]][0x8e]`o'2[0x0][0x93]C&2[0xeb]C[0x95]h[0xc6]SQh[0x5][0x9][0xb][0xa8][0xdc]=[0xbb][0xb1][0xf7][0xca]n|[0xe2][0x9e][0xda]{f7[0xe1]u+[0xbd][0xa9][0xcd]uk[0x17][0xdf]Lo<[0x2][0xce]Y![0xa4][0xea]?[0x18]B[0xcc]t[0x8d][0xcd]czsLo[0x9e]6[0xbd]q[0x1c][0xda][0xb][0xb7][0x1e][0xcb][0xfe][0x88]F[0x86]3[0xaf]B[0xb2]'f[0xbc]-G[0xb3]N[0x9d][0x1a][0xdc][0x83][0x99][0xe1][0x96][0x3]Y[0xf3][0xc3][0xf6][0xae][0xa7][0xaf][0xe4]t[0x82][0xed]=O_3\1[0x81][0x87]d[0xb][0x14]*[0xcf]4P[0xa8][0x8a][0x91][0xc0]#a[0xb8][0xae]y[0xea][0xfe][0xc3]A[0x1][0xa6]kl>[0x11][0x14][0xfc][0xcd]N[0x84][0x87]Z$X[0xa2][0x97]G*[0xfc]?[0xa9][0x0][0xc5]}o[0xf3]c[0xcd][0x98]k[0xc5][0x80][0x8][0xe7][0xe6]M[\r][0xf4]&[0x83][0x1d][0x9d]$[0xcc][0xc4]-:c[0xc5][0xc][0xbd][0x15][0xba]z[0xaf]c,[0xb][0x8d]h[0x18][0x84][0xd8][0xa4][0x88][0xe8]{[0xa9][0xe2][0x13][0xf4]Nd[0x91]L2[0x10]>[0xe6]**[0xd5][0x12]}[0xe0]3[0x11]%[0x0][0x93]][\n]"
-2019-10-19 15:09:44,118 DEBUG [main] wire:86 -  << " [0xbf][\r][0x13]H[0xee][0xe1][0xa1]I[0xec][0x9e][0xf7][0xc0][0xeb])[0xdf]+[0x99]"Y*[0xc4][0xff][0xca]Y[0x16][0x83][0xf3]dV[0xc1][0x85][0x15][0x85]T:[0xe5][0x99][0x1e]T[0xe5]O;[0xb1]I"
-2019-10-19 15:09:44,118 DEBUG [main] wire:72 -  << "[0xef][0x93]o^DY-[0xe0][0xba]Y[0xc0][0x0][0x15][0x19][0xcb][0xb1][0xc8][0xd0][0xfb]RM[0xa5]q[0x83][0xbc][0xbc]4[0xb5][0xdf]%[0x83][0xa9]D[0xcb]Q0[0x14][0xa8][0xc2]UW+[0x91]"[0x5][0xaa][0x7][0x8]n[0x9d]BE[0x99][0xe7][0xa0][0x8]M!?[0x99]s}[0x97]v[0x95][0xf3][[0xa4][0xb]C[0xec]yt7[0xd2][0xa5][0xe6][0xbb][0xb8]z[0xc1][0x6][0xb7][0xd5][0xe0][0x18]n[0x1b][0x9e][0xb][0x8d][0xe1][0xb6]a[0xb3]n[0xbc]^[0xb7]i[0x8a]qR/[0x1b][0xa7][0xf5][0x92][0xf1]j[0xc9][0xab][0xa2][0xab][0xda] [0x9b][0xa2][0xb][0x0][0xd9]#[0xae][0x7]IR[0x3][0xc7][0xaa][0xff]pp[0x84][0xe9][0x1a][0x9b][0x9f]T[0xf4][0xaa][0xb9]j2@[0xc9][0x1f]6xtn[\n]"
-2019-10-19 15:09:44,118 DEBUG [main] wire:72 -  << "[0xb9][0x11][0x8c][0x13][0xa6][0xb4][0xd1]3[0x8c] [0x1b]/[0xe4]N[0xc4][0xfa]O[0xe0][0xdc][0xe8]rZ[0xe0]<[0xe3][0xd1]|[0x8b][0xb0]o&[0xa5][0xe5][0xa2][\n]"
-2019-10-19 15:09:44,118 DEBUG [main] wire:86 -  << "O7[0xa4]@[0x90]>[0xf6][0xd3][0xc4][0xa1][0xab][0xa7]IoK[0x99][0xfc]5[0x9e][0xd9][0xbb]v[0xfc][0xe3][0x9f][0x1][0x9a][0xc1][0xa8]^[0xaa],[0x0][0x0]"
-2019-10-19 15:09:44,134 DEBUG [main] wire:72 -  << "[\r][\n]"
-2019-10-19 15:09:44,134 DEBUG [main] wire:72 -  << "0[\r][\n]"
-2019-10-19 15:09:44,134 DEBUG [main] wire:72 -  << "[\r][\n]"
-2019-10-19 15:09:44,134 DEBUG [main] BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5ddea849
-2019-10-19 15:09:44,134 DEBUG [main] BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
-2019-10-19 15:09:46,483  INFO [main] devpinoyLogger:45 - *****************id is*******************43900
-2019-10-19 15:09:46,521 DEBUG [main] BasicClientConnectionManager:164 - Get connection for route {}->http://localhost:3030
-2019-10-19 15:09:46,521 DEBUG [main] DefaultClientConnectionOperator:176 - Connecting to localhost:3030
-2019-10-19 15:09:46,521 DEBUG [main] RequestAddCookies:122 - CookieSpec selected: ignoreCookies
-2019-10-19 15:09:46,521 DEBUG [main] RequestAuthCache:76 - Auth cache not set in the context
-2019-10-19 15:09:46,521 DEBUG [main] RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
-2019-10-19 15:09:46,521 DEBUG [main] RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
-2019-10-19 15:09:46,521 DEBUG [main] DefaultHttpClient:684 - Attempt 1 to execute request
-2019-10-19 15:09:46,521 DEBUG [main] DefaultClientConnection:276 - Sending request: GET /products HTTP/1.1
-2019-10-19 15:09:46,521 DEBUG [main] wire:72 -  >> "GET /products HTTP/1.1[\r][\n]"
-2019-10-19 15:09:46,521 DEBUG [main] wire:72 -  >> "Accept: */*[\r][\n]"
-2019-10-19 15:09:46,536 DEBUG [main] wire:72 -  >> "Content-Length: 0[\r][\n]"
-2019-10-19 15:09:46,536 DEBUG [main] wire:72 -  >> "Host: localhost:3030[\r][\n]"
-2019-10-19 15:09:46,536 DEBUG [main] wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
-2019-10-19 15:09:46,536 DEBUG [main] wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
-2019-10-19 15:09:46,536 DEBUG [main] wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2019-10-19 15:09:46,536 DEBUG [main] wire:72 -  >> "[\r][\n]"
-2019-10-19 15:09:46,536 DEBUG [main] headers:280 - >> GET /products HTTP/1.1
-2019-10-19 15:09:46,536 DEBUG [main] headers:283 - >> Accept: */*
-2019-10-19 15:09:46,536 DEBUG [main] headers:283 - >> Content-Length: 0
-2019-10-19 15:09:46,536 DEBUG [main] headers:283 - >> Host: localhost:3030
-2019-10-19 15:09:46,536 DEBUG [main] headers:283 - >> Connection: Keep-Alive
-2019-10-19 15:09:46,536 DEBUG [main] headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
-2019-10-19 15:09:46,536 DEBUG [main] headers:283 - >> Accept-Encoding: gzip,deflate
-2019-10-19 15:09:47,728 DEBUG [main] wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
-2019-10-19 15:09:47,728 DEBUG [main] wire:72 -  << "X-Powered-By: Express[\r][\n]"
-2019-10-19 15:09:47,737 DEBUG [main] wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2019-10-19 15:09:47,738 DEBUG [main] wire:72 -  << "Allow: GET,POST,PUT,PATCH,DELETE[\r][\n]"
-2019-10-19 15:09:47,738 DEBUG [main] wire:72 -  << "Vary: Accept, Accept-Encoding[\r][\n]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:72 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:72 -  << "ETag: W/"2caa-TezTeq2vIiVxSLYtAw9IUkVotFc"[\r][\n]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:72 -  << "Content-Encoding: gzip[\r][\n]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:72 -  << "Date: Sat, 19 Oct 2019 09:39:47 GMT[\r][\n]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:72 -  << "Connection: keep-alive[\r][\n]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:72 -  << "[\r][\n]"
-2019-10-19 15:09:47,739 DEBUG [main] DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
-2019-10-19 15:09:47,739 DEBUG [main] headers:264 - << HTTP/1.1 200 OK
-2019-10-19 15:09:47,739 DEBUG [main] headers:267 - << X-Powered-By: Express
-2019-10-19 15:09:47,739 DEBUG [main] headers:267 - << Access-Control-Allow-Origin: *
-2019-10-19 15:09:47,739 DEBUG [main] headers:267 - << Allow: GET,POST,PUT,PATCH,DELETE
-2019-10-19 15:09:47,739 DEBUG [main] headers:267 - << Vary: Accept, Accept-Encoding
-2019-10-19 15:09:47,739 DEBUG [main] headers:267 - << Content-Type: application/json; charset=utf-8
-2019-10-19 15:09:47,739 DEBUG [main] headers:267 - << ETag: W/"2caa-TezTeq2vIiVxSLYtAw9IUkVotFc"
-2019-10-19 15:09:47,739 DEBUG [main] headers:267 - << Content-Encoding: gzip
-2019-10-19 15:09:47,739 DEBUG [main] headers:267 - << Date: Sat, 19 Oct 2019 09:39:47 GMT
-2019-10-19 15:09:47,739 DEBUG [main] headers:267 - << Connection: keep-alive
-2019-10-19 15:09:47,739 DEBUG [main] headers:267 - << Transfer-Encoding: chunked
-2019-10-19 15:09:47,739 DEBUG [main] DefaultHttpClient:511 - Connection can be kept alive indefinitely
-2019-10-19 15:09:47,739 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
-2019-10-19 15:09:47,739 DEBUG [main] wire:72 -  << "a[\r][\n]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:86 -  << "[0x1f]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:86 -  << "[0x8b]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:86 -  << "[0x8]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:86 -  << "[0x0]"
-2019-10-19 15:09:47,739 DEBUG [main] wire:72 -  << "[0x0][0x0][0x0][0x0][0x0][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "[\r][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "6de[\r][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "[0xed][0x9a]mo[0xdb]6[0x10][0xc7][0xbf][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:86 -  << "[0xa1][0x17]E[0xb][0x84]6[0xa9]'K6[0x8a][0xc1]q[0xba][0xb5]h[0xbd][0x19]I[0xd7][0x15]{@AKL[0xcc]Y[0x12][0x5][0x8a][0x8a][0xe7][0x15][0xfb][0xee];J[0xb2][0xad]$nbwN[0xf3]b~[0x13]+$[0xcd][0xfb][0xf3][0xc4][0xfb][0xe9][0x8e][0xd6]gKK[0xcd][0x12][0xab][0xef][0xd1][0xd0][0xeb][0x9d]X[0x89]H[0x85][0xb6][0xfa][0x94][0x9c]X[0xc5]\[0xe4]V[0x1f].b[0xa6][0x99][0xd5][0xff][0xed][0xb3]%b[0xab][0xef]:![0x81][0xb6][0x8c][0xa5][0xdc][0xea][g[0xa5]b[0x11]O[0x12][0x84][0xd1]p8D[0xa7]Lk[0xae][0x4]/[0xd0]s[0x17]OX4a[0x9d]Xz[0x99][0x9b][0xa1][0xaf][0x99][0x8a][0x90]2[0x86][0x96]\[0x89][0x8][0x9a][0xbc][0x8e][0x1b][0x9e]Xe[0x1e]A/q[0xa9][0xe3]8[0xae][0xed][0x12][0x1a][0xc2][0x88]b&[0xf2]\dW[0xb5]}^DJ[0xe4]Z[0xc8][0xc]F[0x8e]d[0x9a]3-[0xa6][0x9]G[0xb][0xa1]g[0xa8][0xe0][0x9][0x8f]4[0xaa][0xfe]*[0x99][0x89][0x8][0xc5][0xfc][0x1a][0xe6]/[0x6][0x95][0xa4]B[0xfc][0xcd][0x7][0xe8][0xec][0xe7][0xf3][0xe1][0xbb][0x9f]Fo[0xd1]D.[0xb8]B[0x13][0xc5][0xb][0xae][0xae]9[0xd2]<[0x9a]e2[0x91]W[0xcb][0x1]rq[0xe][0x8a][0xc1]x[0xca][0xb2][0xf2][0x92]E[0xba]T\[0xb5][0xd6]hzd[0xcc][0xc1]W[0xd6][0xf8]G[0x10]JN[0xdd]_[0xa1][0xad]T[0xa6]e[0xa6]u[0xde][0xef]v[0x17][0x8b]Eg[0xca][0xb]=-[0x97][0x9d]H[0xa6][0xdd]Bh[0xde][0x8d][0x9b][0x9]0c[0xc]OW.[0xc2][0xb5][0xbd]n[0xe5][0xd0]N[0xfe][0x9d][0x88]_R[0xe2]Q'pI[0xcf][0xa5][0xae][0xf7][0xac][0x98][0x97]o[0xe2][0x97]U[0xf7][0xb3]([0xcd]_[0x9e][0x8f]?[0x8e]F`P[0xa4][0xec][0x8a]oL[0x8a][0xf4][0xaa]3[0x9d].[0xb][\r]N[0x89]*[0xa3][0xa7] [0xe0][0xb4]\~[0xfa][0xf9][0xa2][[0x8d]-[0xba][0xb9][0x92]q[0x19][0xe9][0xa2]2V[[0xfc]T[0xb0][0xce][0x9f][0xf9][0x15][0xcc][0x17])[0xce]4[0x8f][0x87]p[0xdb]-[0x9b]P[0x1f]S[0x8a]i[0xef]=[0xed][0xf5][0xbd][0xa0]O[0x9c][0x8e][0x1d][0x6][0xd5]:[0xf3]x[0x97]a[0x11][0xc][0xba][0x92]f[0x81][0xeb]-c[0xb1])[0xb4][0x12][0x9b][0x4][0x84][0xd8][0xd6]z[0xef][0xc][0x93]9KD[0xc6]7[0xbb][0xe6]~1[0xbd]>q;v[0xe0]= f3[0xec][0x9f][0x93][0xc6]~[0x1e][0xa5] [0xc0]v[0x83][0x1e]![0xc4][0x3][0x11]t[0xa3][0xe2][0xb5],[0xb][0xbe]`j[0x7][0xeb]^[0xc7][0x9][0xc3]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "[0x87][0xad]7[0xc3]nYw[0x88][0xe3][0xd7][0xd6][0xc9]m[0xeb]3[0x99][0xc4][0xdf][0xca][0x9][0xe][0xb5][0x9d]Z[0x6][0xf5]62F2[0xcb] |x[0x8c]^[0xcb][0x94][0xa3]gh[0xf][0xaf][0xec])[0xe7][0x8f][0x95] 7[0xf0][0x9c]/[0x80][0x4][0xd1][0x8e][0xf7][0x1][0x8d]d[0x9e]s[0xf5]^[0xe6][0xff][0x1d]+[0xd4]#[0xb4]w?V[0xde][0xc9][0xec][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "'[0xac][0xd0][0xd0][0x8d]x[0xc6][0x95]A[0xc2].[0xd8][0xb8][0x94][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "i[0xb9],NP[0x94][0xc8]h[0xe][0x9f][0x8a][0xc5]B[0xc2][0xe7][0x15],[0xcd][0xfc][0xcb]S[0xa9][0xcd][0xc5][0xe4]lX [0x96][0xc5]([0x95][0x8a][0xef][0xc8][0x19]P[0xfe]5[0x9c][0xc1][0x14]{[0xd7]8[0xaa]<[0xa8]e[0xbe][0x85]:[0xc6][0xfb]+[0xea][0x84][0xa1][0x13]x[0xb6][0x1f][0x84]A[0xb0][0xa2][0x8e][0xe9]>[0x1c]u`[0xb6][0xda][0xe2][0x91]:G[0xea]<)u[0xa8][0xdd][0xf3][0x83][0xde][0x17][0xb0][0xd3][0xe2]L[0xf0]0gzw8[0x13][0xd8][0xc0][0x19][0xf7][0x80][0xe9][0xcb][0x1e][0xd9]K[0xb0]O[0xf6]RQ%[0xd8][0x9f]*[0x1b][0x8c][0xd4][0xe6][0xba][0xb5];of/[0xae][0xe7][0xf7][0xfc][0x86]#u[0xff][0xc1]@b[0xa6]kl[0x1e]Ir$[0xc9][0xd3][0x92][0x4]b[0x9d]zk[0x9][0xaf]L[0xca][0x0][0xd1][0xaa][0x0]%[0xe3][0xe1][0xc7][0x16]K [0x8c]wI[[0xdc]N[0xb8][0xc1][0x89][0x13][0x6][0xc6][0xd1][0xd4][0xb1][0x1f][0xa8][0x86][0xea][0xc7][0xb9][0xb1][0xc1]V[0xdb]q[0x1d][0xa4][0x83][0xe6]r[0x9][0xa0]([0xe0][0x13][0x89],J[0xca][0x98][0xc7]w)[0xb1]V[0xdf][0xc2][0xc4][0xab][0x90][0x9e]N[0xb0][0xbb][0x13]$[0xf8][0xea][0xfb]8e[0xb5]0[0x1][0xcc]h[0x12][0x8e][0xda]][0xb7]H[0xe1][0xdb][0xb4][0xb7]"E[0xd5]8R[0xc0]t[0x8d][0xcd]#)[0x8e][0xa4]xZR@r[0xbd][0xbd][0xd4][0x19][0xed]Y[0xda][0x4]mF[0xd4][0xa5][0x8d]K[0xe]yb2z[0xac][0xf3][0x12][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << ":[0xcf][0xf7][0xad]c[0xa2][0xbb]uK[0xed][0xcb][0xdb][0x18]q[0x83]u[0xc2]Q[0xf5][0x1f][0xe]#0]c[0xf3][0x88][0x91]#F[0x9e][0x1c]#[0xfe][0xd6][0xd2][0xe5]lO[0x8c][0x84]w1[0x2]k[0xa4][0xe4]`[0x18]9{4[0x8c]8_[0x81][0x91]x;F[0xfc][0xdb]u[0x8b][0xef]y[0xb4][0x85][0x11][0xff][0x80]u[0xcb][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:86 -  << "#[0xfe][0xb1]n9b[0xe4]i1[0xe2][0x90][0x90][0xf8][0xf6]Z[0xc2][0x4][0x82][0x9b]WU[0x8b][0xfb][0xbb][0x85][0x1c][0xfc][0xb][[0xa2][0x8b]RA r<[0x96]e[0xa6][0xd1]E[0xce][0xd9][0x9c][0xab][0xa2][0x8e][0xfa]7[0xe3][0xc9][0x4][0x19][0x14]H"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "[0x13]dp[0x95][0x19][0xe8]L[0x98]P/`[0x8e][0xd3][0xa4][0x8e][0xe5]/[0xa2][0x87][0xba]7[0xea][0x1c]j{P[0x3][0xf8][0x1e]u[0xe9][0xfd][0xf0][0x9][0xc8]/[0x8]J[0xb][0x91][0x96])[0xca]+[0x98]<[0xb7][0xa1][0xe9]||[0xf1]bP)[0xaf]tEk][0x11][0xe8]B[0xb])/[0xb9][0x1a] [0xa7]kF[0xcc][0xa4][0xca][0x90]^p[0xae][0xeb]2[0xe7]&n[0x1a]?[0xb4]h[0xf3][0xfe][0x2][0xb4][0x9][0xd9][0x89]5y[0xfd]m[0xc0][0x8b][0x83][0x17]l[0x89][0x8b][0xc6][0x83][0xa9][0xf1] .[0x1a][0xf]b[0xe3]A,[0xd2]<[0xc7]k[0xa5][0xd8](-[0x80]JB[0xe1][0xa9][0xf1]^[0xb7][0xbe]A[\r][0x9b]l[0x1a][0xf8][0xae]c[0xbb][0xc4][0xf6]Vg[0xb3]u[0xff][0xc1][0xd8]D`[0xbe][0xea][0xf]L[0xfa][0xed][0xe1]d[0x82][0xa2][0xf2][0xf1]*"[0x98]B[0xaf][0xd6]O[0x94][0x2]B[0xe2][0x87][0xc9][0xc5]c[0x85][0xe6]J[0x82]}G[0xc2][0xb0][0x8c][0x85][0xfc][0x6]f[0xbd][0x9b]fW[0xa1][0xf6][0xc8],[0xf2]+[0x1c][0xde]b[0x91][0x9][0x91]=5[0xc0][0xce][0xdc]EC5[0xac][0x5] j[0xdb][0xe1][0xd6]r([0xfc][0xd0]Nd[0xec]][0x8e]`o'2[0x0][0x93]C&2[0xeb]C[0x95]h[0xc6]SQh[0x5][0x9][0xb][0xa8][0xdc]=[0xbb][0xb1][0xf7][0xca]n|[0xe2][0x9e][0xda]{f7[0xe1]u+[0xbd][0xa9][0xcd]uk[0x17][0xdf]Lo<[0x2][0xce]Y![0xa4][0xea]?[0x18]B[0xcc]t[0x8d][0xcd]czsLo[0x9e]6[0xbd]q[0x1c][0xda][0xb][0xb7][0x1e][0xcb][0xfe][0x88]F[0x86]3[0xaf]B[0xb2]'f[0xbc]-G[0xb3]N[0x9d][0x1a][0xdc][0x83][0x99][0xe1][0x96][0x3]Y[0xf3][0xc3][0xf6][0xae][0xa7][0xaf][0xe4]t[0x82][0xed]=O_3\1[0x81][0x87]d[0xb][0x14]*[0xcf]4P[0xa8][0x8a][0x91][0xc0]#a[0xb8][0xae]y[0xea][0xfe][0xc3]A[0x1][0xa6]kl>[0x11][0x14][0xfc][0xcd]N[0x84][0x87]Z$X[0xa2][0x97]G*[0xfc]?[0xa9][0x0][0xc5]}o[0xf3]c[0xcd][0x98]k[0xc5][0x80][0x8][0xe7][0xe6]M[\r][0xf4]&[0x83][0x1d][0x9d]$[0xcc][0xc4]-:c[0xc5][0xc][0xbd][0x15][0xba]z[0xaf]c,[0xb][0x8d]h[0x18][0x84][0xd8][0xa4][0x88][0xe8]{[0xa9][0xe2][0x13][0xf4]Nd[0x91]L2[0x10]>[0xe6]**[0xd5][0x12]}[0xe0]3[0x11]%[0x0][0x93]][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:86 -  << " [0xbf][\r][0x13]H[0xee][0xe1][0xa1]I[0xec][0x9e][0xf7][0xc0][0xeb])[0xdf]+[0x99]"Y*[0xc4][0xff][0xca]Y[0x16][0x83][0xf3]dV[0xc1][0x85][0x15][0x85]T:[0xe5][0x99][0x1e]T[0xe5]O;[0xb1]I"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "[0xef][0x93]o^DY-[0xe0][0xba]Y[0xc0][0x0][0x15][0x19][0xcb][0xb1][0xc8][0xd0][0xfb]RM[0xa5]q[0x83][0xbc][0xbc]4[0xb5][0xdf]%[0x83][0xa9]D[0xcb]Q0[0x14][0xa8][0xc2]UW+[0x91]"[0x5][0xaa][0x7][0x8]n[0x9d]BE[0x99][0xe7][0xa0][0x8]M!?[0x99]s}[0x97]v[0x95][0xf3][[0xa4][0xb]C[0xec]yt7[0xd2][0xa5][0xe6][0xbb][0xb8]z[0xc1][0x6][0xb7][0xd5][0xe0][0x18]n[0x1b][0x9e][0xb][0x8d][0xe1][0xb6]a[0xb3]n[0xbc]^[0xb7]i[0x8a]qR/[0x1b][0xa7][0xf5][0x92][0xf1]j[0xc9][0xab][0xa2][0xab][0xda] [0x9b][0xa2][0xb][0x0][0xd9]#[0xae][0x7]IR[0x3][0xc7][0xaa][0xff]pp[0x84][0xe9][0x1a][0x9b][0x9f]T[0xf4][0xaa][0xb9]j2@[0xc9][0x1f]6xtn[\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "[0xb9][0x11][0x8c][0x13][0xa6][0xb4][0xd1]3[0x8c] [0x1b]/[0xe4]N[0xc4][0xfa]O[0xe0][0xdc][0xe8]rZ[0xe0]<[0xe3][0xd1]|[0x8b][0xb0]o&[0xa5][0xe5][0xa2][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:86 -  << "O7[0xa4]@[0x90]>[0xf6][0xd3][0xc4][0xa1][0xab][0xa7]IoK[0x99][0xfc]5[0x9e][0xd9][0xbb]v[0xfc][0xe3][0x9f][0x1][0x9a][0xc1][0xa8]^[0xaa],[0x0][0x0]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "[\r][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "0[\r][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] wire:72 -  << "[\r][\n]"
-2019-10-19 15:09:47,755 DEBUG [main] BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5e8f9e2d
-2019-10-19 15:09:47,755 DEBUG [main] BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
-2019-10-19 15:09:47,755  INFO [main] devpinoyLogger:53 - ************respone**************{"total":51957,"limit":10,"skip":0,"data":[{"id":43900,"name":"Duracell - AAA Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333424019","shipping":0,"description":"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN2400B4Z","url":"http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":48530,"name":"Duracell - AA 1.5V CopperTop Batteries (4-Pack)","type":"HardGood","price":5.49,"upc":"041333415017","shipping":0,"description":"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more","manufacturer":"Duracell","model":"MN1500B4Z","url":"http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":127687,"name":"Duracell - AA Batteries (8-Pack)","type":"HardGood","price":7.49,"upc":"041333825014","shipping":0,"description":"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack","manufacturer":"Duracell","model":"MN1500B8Z","url":"http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":150115,"name":"Energizer - MAX Batteries AA (4-Pack)","type":"HardGood","price":4.99,"upc":"039800011329","shipping":0,"description":"4-pack AA alkaline batteries; battery tester included","manufacturer":"Energizer","model":"E91BP-4","url":"http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":185230,"name":"Duracell - C Batteries (4-Pack)","type":"HardGood","price":8.99,"upc":"041333440019","shipping":0,"description":"Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN1400R4Z","url":"http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":185267,"name":"Duracell - D Batteries (4-Pack)","type":"HardGood","price":9.99,"upc":"041333430010","shipping":0,"description":"Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack","manufacturer":"Duracell","model":"MN1300R4Z","url":"http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&skuId=185267&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":309062,"name":"Pioneer - 4\" 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black","type":"HardGood","price":144.99,"upc":"012562165141","shipping":0,"description":"80W maximum power (20W RMS); 4\" IMPP composite cone woofer; 3/4\" horn tweeter","manufacturer":"Pioneer","model":"TS-X200","url":"http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&skuId=309062&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0300000","name":"Car Electronics & GPS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"abcat0302000","name":"Car Audio","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"abcat0302005","name":"Car Speakers","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat360500050015","name":"4\" Car Speakers","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]},{"id":312290,"name":"Duracell - 9V Batteries (2-Pack)","type":"HardGood","price":7.99,"upc":"041333216010","shipping":0,"description":"Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack","manufacturer":"Duracell","model":"MN1604B2Z","url":"http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&skuId=312290&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208002","name":"Alkaline Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":333179,"name":"Energizer - N Cell E90 Batteries (2-Pack)","type":"HardGood","price":5.99,"upc":"039800013200","shipping":0,"description":"Alkaline batteries; 1.5V","manufacturer":"Energizer","model":"E90BP-2","url":"http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&skuId=333179&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0208006","name":"Specialty Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat248700050021","name":"Housewares","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat303600050001","name":"Household Batteries","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":346575,"name":"Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln & Mercury Vehicles - Black","type":"HardGood","price":16.99,"upc":"086429002757","shipping":0,"description":"From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket","manufacturer":"Metra","model":"99-5512","url":"http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&skuId=346575&cmp=RMXCC","image":"http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg","createdAt":"2016-11-17T17:58:03.298Z","updatedAt":"2016-11-17T17:58:03.298Z","categories":[{"id":"abcat0300000","name":"Car Electronics & GPS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat165900050023","name":"Car Installation Parts & Accessories","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat165900050031","name":"Deck Installation Parts","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat165900050033","name":"Dash Installation Kits","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat331600050007","name":"Car Audio Installation Parts","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]}]}
+2019-11-17 22:56:01,729  INFO [main] devpinoyLogger:47 - *****************id is*******************43900
+2019-11-17 22:56:03,762 DEBUG [main] BasicClientConnectionManager:164 - Get connection for route {}->http://localhost:3030
+2019-11-17 22:56:03,777 DEBUG [main] DefaultClientConnectionOperator:176 - Connecting to localhost:3030
+2019-11-17 22:56:03,803 DEBUG [main] RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2019-11-17 22:56:03,808 DEBUG [main] RequestAuthCache:76 - Auth cache not set in the context
+2019-11-17 22:56:03,809 DEBUG [main] RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
+2019-11-17 22:56:03,811 DEBUG [main] RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2019-11-17 22:56:03,813 DEBUG [main] DefaultHttpClient:684 - Attempt 1 to execute request
+2019-11-17 22:56:03,817 DEBUG [main] DefaultClientConnection:276 - Sending request: GET /products HTTP/1.1
+2019-11-17 22:56:03,821 DEBUG [main] wire:72 -  >> "GET /products HTTP/1.1[\r][\n]"
+2019-11-17 22:56:03,824 DEBUG [main] wire:72 -  >> "Accept: */*[\r][\n]"
+2019-11-17 22:56:03,827 DEBUG [main] wire:72 -  >> "Content-Length: 0[\r][\n]"
+2019-11-17 22:56:03,828 DEBUG [main] wire:72 -  >> "Host: localhost:3030[\r][\n]"
+2019-11-17 22:56:03,830 DEBUG [main] wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-17 22:56:03,830 DEBUG [main] wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
+2019-11-17 22:56:03,831 DEBUG [main] wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-11-17 22:56:03,833 DEBUG [main] wire:72 -  >> "[\r][\n]"
+2019-11-17 22:56:03,834 DEBUG [main] headers:280 - >> GET /products HTTP/1.1
+2019-11-17 22:56:03,834 DEBUG [main] headers:283 - >> Accept: */*
+2019-11-17 22:56:03,834 DEBUG [main] headers:283 - >> Content-Length: 0
+2019-11-17 22:56:03,835 DEBUG [main] headers:283 - >> Host: localhost:3030
+2019-11-17 22:56:03,836 DEBUG [main] headers:283 - >> Connection: Keep-Alive
+2019-11-17 22:56:03,836 DEBUG [main] headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+2019-11-17 22:56:03,837 DEBUG [main] headers:283 - >> Accept-Encoding: gzip,deflate
+2019-11-17 22:56:04,475 DEBUG [main] wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
+2019-11-17 22:56:04,479 DEBUG [main] wire:72 -  << "X-Powered-By: Express[\r][\n]"
+2019-11-17 22:56:04,480 DEBUG [main] wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-17 22:56:04,481 DEBUG [main] wire:72 -  << "Allow: GET,POST,PUT,PATCH,DELETE[\r][\n]"
+2019-11-17 22:56:04,481 DEBUG [main] wire:72 -  << "Vary: Accept, Accept-Encoding[\r][\n]"
+2019-11-17 22:56:04,482 DEBUG [main] wire:72 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-11-17 22:56:04,483 DEBUG [main] wire:72 -  << "ETag: W/"2caa-TezTeq2vIiVxSLYtAw9IUkVotFc"[\r][\n]"
+2019-11-17 22:56:04,483 DEBUG [main] wire:72 -  << "Content-Encoding: gzip[\r][\n]"
+2019-11-17 22:56:04,490 DEBUG [main] wire:72 -  << "Date: Sun, 17 Nov 2019 17:26:04 GMT[\r][\n]"
+2019-11-17 22:56:04,491 DEBUG [main] wire:72 -  << "Connection: keep-alive[\r][\n]"
+2019-11-17 22:56:04,492 DEBUG [main] wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
+2019-11-17 22:56:04,492 DEBUG [main] wire:72 -  << "[\r][\n]"
+2019-11-17 22:56:04,494 DEBUG [main] DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
+2019-11-17 22:56:04,494 DEBUG [main] headers:264 - << HTTP/1.1 200 OK
+2019-11-17 22:56:04,495 DEBUG [main] headers:267 - << X-Powered-By: Express
+2019-11-17 22:56:04,495 DEBUG [main] headers:267 - << Access-Control-Allow-Origin: *
+2019-11-17 22:56:04,496 DEBUG [main] headers:267 - << Allow: GET,POST,PUT,PATCH,DELETE
+2019-11-17 22:56:04,496 DEBUG [main] headers:267 - << Vary: Accept, Accept-Encoding
+2019-11-17 22:56:04,497 DEBUG [main] headers:267 - << Content-Type: application/json; charset=utf-8
+2019-11-17 22:56:04,497 DEBUG [main] headers:267 - << ETag: W/"2caa-TezTeq2vIiVxSLYtAw9IUkVotFc"
+2019-11-17 22:56:04,498 DEBUG [main] headers:267 - << Content-Encoding: gzip
+2019-11-17 22:56:04,498 DEBUG [main] headers:267 - << Date: Sun, 17 Nov 2019 17:26:04 GMT
+2019-11-17 22:56:04,499 DEBUG [main] headers:267 - << Connection: keep-alive
+2019-11-17 22:56:04,500 DEBUG [main] headers:267 - << Transfer-Encoding: chunked
+2019-11-17 22:56:04,510 DEBUG [main] DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2019-11-17 22:56:04,537 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-11-17 22:56:04,539 DEBUG [main] wire:72 -  << "a[\r][\n]"
+2019-11-17 22:56:04,541 DEBUG [main] wire:86 -  << "[0x1f]"
+2019-11-17 22:56:04,542 DEBUG [main] wire:86 -  << "[0x8b]"
+2019-11-17 22:56:04,543 DEBUG [main] wire:86 -  << "[0x8]"
+2019-11-17 22:56:04,544 DEBUG [main] wire:86 -  << "[0x0]"
+2019-11-17 22:56:04,545 DEBUG [main] wire:72 -  << "[0x0][0x0][0x0][0x0][0x0][\n]"
+2019-11-17 22:56:04,552 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-11-17 22:56:04,620 DEBUG [main] wire:72 -  << "[\r][\n]"
+2019-11-17 22:56:04,621 DEBUG [main] wire:72 -  << "6de[\r][\n]"
+2019-11-17 22:56:04,621 DEBUG [main] wire:72 -  << "[0xed][0x9a]mo[0xdb]6[0x10][0xc7][0xbf][\n]"
+2019-11-17 22:56:04,622 DEBUG [main] wire:86 -  << "[0xa1][0x17]E[0xb][0x84]6[0xa9]'K6[0x8a][0xc1]q[0xba][0xb5]h[0xbd][0x19]I[0xd7][0x15]{@AKL[0xcc]Y[0x12][0x5][0x8a][0x8a][0xe7][0x15][0xfb][0xee];J[0xb2][0xad]$nbwN[0xf3]b~[0x13]+$[0xcd][0xfb][0xf3][0xc4][0xfb][0xe9][0x8e][0xd6]gKK[0xcd][0x12][0xab][0xef][0xd1][0xd0][0xeb][0x9d]X[0x89]H[0x85][0xb6][0xfa][0x94][0x9c]X[0xc5]\[0xe4]V[0x1f].b[0xa6][0x99][0xd5][0xff][0xed][0xb3]%b[0xab][0xef]:![0x81][0xb6][0x8c][0xa5][0xdc][0xea][g[0xa5]b[0x11]O[0x12][0x84][0xd1]p8D[0xa7]Lk[0xae][0x4]/[0xd0]s[0x17]OX4a[0x9d]Xz[0x99][0x9b][0xa1][0xaf][0x99][0x8a][0x90]2[0x86][0x96]\[0x89][0x8][0x9a][0xbc][0x8e][0x1b][0x9e]Xe[0x1e]A/q[0xa9][0xe3]8[0xae][0xed][0x12][0x1a][0xc2][0x88]b&[0xf2]\dW[0xb5]}^DJ[0xe4]Z[0xc8][0xc]F[0x8e]d[0x9a]3-[0xa6][0x9]G[0xb][0xa1]g[0xa8][0xe0][0x9][0x8f]4[0xaa][0xfe]*[0x99][0x89][0x8][0xc5][0xfc][0x1a][0xe6]/[0x6][0x95][0xa4]B[0xfc][0xcd][0x7][0xe8][0xec][0xe7][0xf3][0xe1][0xbb][0x9f]Fo[0xd1]D.[0xb8]B[0x13][0xc5][0xb][0xae][0xae]9[0xd2]<[0x9a]e2[0x91]W[0xcb][0x1]rq[0xe][0x8a][0xc1]x[0xca][0xb2][0xf2][0x92]E[0xba]T\[0xb5][0xd6]hzd[0xcc][0xc1]W[0xd6][0xf8]G[0x10]JN[0xdd]_[0xa1][0xad]T[0xa6]e[0xa6]u[0xde][0xef]v[0x17][0x8b]Eg[0xca][0xb]=-[0x97][0x9d]H[0xa6][0xdd]Bh[0xde][0x8d][0x9b][0x9]0c[0xc]OW.[0xc2][0xb5][0xbd]n[0xe5][0xd0]N[0xfe][0x9d][0x88]_R[0xe2]Q'pI[0xcf][0xa5][0xae][0xf7][0xac][0x98][0x97]o[0xe2][0x97]U[0xf7][0xb3]([0xcd]_[0x9e][0x8f]?[0x8e]F`P[0xa4][0xec][0x8a]oL[0x8a][0xf4][0xaa]3[0x9d].[0xb][\r]N[0x89]*[0xa3][0xa7] [0xe0][0xb4]\~[0xfa][0xf9][0xa2][[0x8d]-[0xba][0xb9][0x92]q[0x19][0xe9][0xa2]2V[[0xfc]T[0xb0][0xce][0x9f][0xf9][0x15][0xcc][0x17])[0xce]4[0x8f][0x87]p[0xdb]-[0x9b]P[0x1f]S[0x8a]i[0xef]=[0xed][0xf5][0xbd][0xa0]O[0x9c][0x8e][0x1d][0x6][0xd5]:[0xf3]x[0x97]a[0x11][0xc][0xba][0x92]f[0x81][0xeb]-c[0xb1])[0xb4][0x12][0x9b][0x4][0x84][0xd8][0xd6]z[0xef][0xc][0x93]9KD[0xc6]7[0xbb][0xe6]~1[0xbd]>q;v[0xe0]= f3[0xec][0x9f][0x93][0xc6]~[0x1e][0xa5] [0xc0]v[0x83][0x1e]![0xc4][0x3][0x11]t[0xa3][0xe2][0xb5],[0xb][0xbe]`j[0x7][0xeb]^[0xc7][0x9][0xc3]"
+2019-11-17 22:56:04,624 DEBUG [main] wire:72 -  << "[0x87][0xad]7[0xc3]nYw[0x88][0xe3][0xd7][0xd6][0xc9]m[0xeb]3[0x99][0xc4][0xdf][0xca][0x9][0xe][0xb5][0x9d]Z[0x6][0xf5]62F2[0xcb] |x[0x8c]^[0xcb][0x94][0xa3]gh[0xf][0xaf][0xec])[0xe7][0x8f][0x95] 7[0xf0][0x9c]/[0x80][0x4][0xd1][0x8e][0xf7][0x1][0x8d]d[0x9e]s[0xf5]^[0xe6][0xff][0x1d]+[0xd4]#[0xb4]w?V[0xde][0xc9][0xec][\n]"
+2019-11-17 22:56:04,624 DEBUG [main] wire:72 -  << "'[0xac][0xd0][0xd0][0x8d]x[0xc6][0x95]A[0xc2].[0xd8][0xb8][0x94][\n]"
+2019-11-17 22:56:04,624 DEBUG [main] wire:72 -  << "i[0xb9],NP[0x94][0xc8]h[0xe][0x9f][0x8a][0xc5]B[0xc2][0xe7][0x15],[0xcd][0xfc][0xcb]S[0xa9][0xcd][0xc5][0xe4]lX [0x96][0xc5]([0x95][0x8a][0xef][0xc8][0x19]P[0xfe]5[0x9c][0xc1][0x14]{[0xd7]8[0xaa]<[0xa8]e[0xbe][0x85]:[0xc6][0xfb]+[0xea][0x84][0xa1][0x13]x[0xb6][0x1f][0x84]A[0xb0][0xa2][0x8e][0xe9]>[0x1c]u`[0xb6][0xda][0xe2][0x91]:G[0xea]<)u[0xa8][0xdd][0xf3][0x83][0xde][0x17][0xb0][0xd3][0xe2]L[0xf0]0gzw8[0x13][0xd8][0xc0][0x19][0xf7][0x80][0xe9][0xcb][0x1e][0xd9]K[0xb0]O[0xf6]RQ%[0xd8][0x9f]*[0x1b][0x8c][0xd4][0xe6][0xba][0xb5];of/[0xae][0xe7][0xf7][0xfc][0x86]#u[0xff][0xc1]@b[0xa6]kl[0x1e]Ir$[0xc9][0xd3][0x92][0x4]b[0x9d]zk[0x9][0xaf]L[0xca][0x0][0xd1][0xaa][0x0]%[0xe3][0xe1][0xc7][0x16]K [0x8c]wI[[0xdc]N[0xb8][0xc1][0x89][0x13][0x6][0xc6][0xd1][0xd4][0xb1][0x1f][0xa8][0x86][0xea][0xc7][0xb9][0xb1][0xc1]V[0xdb]q[0x1d][0xa4][0x83][0xe6]r[0x9][0xa0]([0xe0][0x13][0x89],J[0xca][0x98][0xc7]w)[0xb1]V[0xdf][0xc2][0xc4][0xab][0x90][0x9e]N[0xb0][0xbb][0x13]$[0xf8][0xea][0xfb]8e[0xb5]0[0x1][0xcc]h[0x12][0x8e][0xda]][0xb7]H[0xe1][0xdb][0xb4][0xb7]"E[0xd5]8R[0xc0]t[0x8d][0xcd]#)[0x8e][0xa4]xZR@r[0xbd][0xbd][0xd4][0x19][0xed]Y[0xda][0x4]mF[0xd4][0xa5][0x8d]K[0xe]yb2z[0xac][0xf3][0x12][\n]"
+2019-11-17 22:56:04,625 DEBUG [main] wire:72 -  << ":[0xcf][0xf7][0xad]c[0xa2][0xbb]uK[0xed][0xcb][0xdb][0x18]q[0x83]u[0xc2]Q[0xf5][0x1f][0xe]#0]c[0xf3][0x88][0x91]#F[0x9e][0x1c]#[0xfe][0xd6][0xd2][0xe5]lO[0x8c][0x84]w1[0x2]k[0xa4][0xe4]`[0x18]9{4[0x8c]8_[0x81][0x91]x;F[0xfc][0xdb]u[0x8b][0xef]y[0xb4][0x85][0x11][0xff][0x80]u[0xcb][\n]"
+2019-11-17 22:56:04,625 DEBUG [main] wire:86 -  << "#[0xfe][0xb1]n9b[0xe4]i1[0xe2][0x90][0x90][0xf8][0xf6]Z[0xc2][0x4][0x82][0x9b]WU[0x8b][0xfb][0xbb][0x85][0x1c][0xfc][0xb][[0xa2][0x8b]RA r<[0x96]e[0xa6][0xd1]E[0xce][0xd9][0x9c][0xab][0xa2][0x8e][0xfa]7[0xe3][0xc9][0x4][0x19][0x14]H"
+2019-11-17 22:56:04,626 DEBUG [main] wire:72 -  << "[0x13]dp[0x95][0x19][0xe8]L[0x98]P/`[0x8e][0xd3][0xa4][0x8e][0xe5]/[0xa2][0x87][0xba]7[0xea][0x1c]j{P[0x3][0xf8][0x1e]u[0xe9][0xfd][0xf0][0x9][0xc8]/[0x8]J[0xb][0x91][0x96])[0xca]+[0x98]<[0xb7][0xa1][0xe9]||[0xf1]bP)[0xaf]tEk][0x11][0xe8]B[0xb])/[0xb9][0x1a] [0xa7]kF[0xcc][0xa4][0xca][0x90]^p[0xae][0xeb]2[0xe7]&n[0x1a]?[0xb4]h[0xf3][0xfe][0x2][0xb4][0x9][0xd9][0x89]5y[0xfd]m[0xc0][0x8b][0x83][0x17]l[0x89][0x8b][0xc6][0x83][0xa9][0xf1] .[0x1a][0xf]b[0xe3]A,[0xd2]<[0xc7]k[0xa5][0xd8](-[0x80]JB[0xe1][0xa9][0xf1]^[0xb7][0xbe]A[\r][0x9b]l[0x1a][0xf8][0xae]c[0xbb][0xc4][0xf6]Vg[0xb3]u[0xff][0xc1][0xd8]D`[0xbe][0xea][0xf]L[0xfa][0xed][0xe1]d[0x82][0xa2][0xf2][0xf1]*"[0x98]B[0xaf][0xd6]O[0x94][0x2]B[0xe2][0x87][0xc9][0xc5]c[0x85][0xe6]J[0x82]}G[0xc2][0xb0][0x8c][0x85][0xfc][0x6]f[0xbd][0x9b]fW[0xa1][0xf6][0xc8],[0xf2]+[0x1c][0xde]b[0x91][0x9][0x91]=5[0xc0][0xce][0xdc]EC5[0xac][0x5] j[0xdb][0xe1][0xd6]r([0xfc][0xd0]Nd[0xec]][0x8e]`o'2[0x0][0x93]C&2[0xeb]C[0x95]h[0xc6]SQh[0x5][0x9][0xb][0xa8][0xdc]=[0xbb][0xb1][0xf7][0xca]n|[0xe2][0x9e][0xda]{f7[0xe1]u+[0xbd][0xa9][0xcd]uk[0x17][0xdf]Lo<[0x2][0xce]Y![0xa4][0xea]?[0x18]B[0xcc]t[0x8d][0xcd]czsLo[0x9e]6[0xbd]q[0x1c][0xda][0xb][0xb7][0x1e][0xcb][0xfe][0x88]F[0x86]3[0xaf]B[0xb2]'f[0xbc]-G[0xb3]N[0x9d][0x1a][0xdc][0x83][0x99][0xe1][0x96][0x3]Y[0xf3][0xc3][0xf6][0xae][0xa7][0xaf][0xe4]t[0x82][0xed]=O_3\1[0x81][0x87]d[0xb][0x14]*[0xcf]4P[0xa8][0x8a][0x91][0xc0]#a[0xb8][0xae]y[0xea][0xfe][0xc3]A[0x1][0xa6]kl>[0x11][0x14][0xfc][0xcd]N[0x84][0x87]Z$X[0xa2][0x97]G*[0xfc]?[0xa9][0x0][0xc5]}o[0xf3]c[0xcd][0x98]k[0xc5][0x80][0x8][0xe7][0xe6]M[\r][0xf4]&[0x83][0x1d][0x9d]$[0xcc][0xc4]-:c[0xc5][0xc][0xbd][0x15][0xba]z[0xaf]c,[0xb][0x8d]h[0x18][0x84][0xd8][0xa4][0x88][0xe8]{[0xa9][0xe2][0x13][0xf4]Nd[0x91]L2[0x10]>[0xe6]**[0xd5][0x12]}[0xe0]3[0x11]%[0x0][0x93]][\n]"
+2019-11-17 22:56:04,632 DEBUG [main] wire:86 -  << " [0xbf][\r][0x13]H[0xee][0xe1][0xa1]I[0xec][0x9e][0xf7][0xc0][0xeb])[0xdf]+[0x99]"Y*[0xc4][0xff][0xca]Y[0x16][0x83][0xf3]dV[0xc1][0x85][0x15][0x85]T:[0xe5][0x99][0x1e]T[0xe5]O;[0xb1]I"
+2019-11-17 22:56:04,633 DEBUG [main] wire:72 -  << "[0xef][0x93]o^DY-[0xe0][0xba]Y[0xc0][0x0][0x15][0x19][0xcb][0xb1][0xc8][0xd0][0xfb]RM[0xa5]q[0x83][0xbc][0xbc]4[0xb5][0xdf]%[0x83][0xa9]D[0xcb]Q0[0x14][0xa8][0xc2]UW+[0x91]"[0x5][0xaa][0x7][0x8]n[0x9d]BE[0x99][0xe7][0xa0][0x8]M!?[0x99]s}[0x97]v[0x95][0xf3][[0xa4][0xb]C[0xec]yt7[0xd2][0xa5][0xe6][0xbb][0xb8]z[0xc1][0x6][0xb7][0xd5][0xe0][0x18]n[0x1b][0x9e][0xb][0x8d][0xe1][0xb6]a[0xb3]n[0xbc]^[0xb7]i[0x8a]qR/[0x1b][0xa7][0xf5][0x92][0xf1]j[0xc9][0xab][0xa2][0xab][0xda] [0x9b][0xa2][0xb][0x0][0xd9]#[0xae][0x7]IR[0x3][0xc7][0xaa][0xff]pp[0x84][0xe9][0x1a][0x9b][0x9f]T[0xf4][0xaa][0xb9]j2@[0xc9][0x1f]6xtn[\n]"
+2019-11-17 22:56:04,633 DEBUG [main] wire:72 -  << "[0xb9][0x11][0x8c][0x13][0xa6][0xb4][0xd1]3[0x8c] [0x1b]/[0xe4]N[0xc4][0xfa]O[0xe0][0xdc][0xe8]rZ[0xe0]<[0xe3][0xd1]|[0x8b][0xb0]o&[0xa5][0xe5][0xa2][\n]"
+2019-11-17 22:56:04,634 DEBUG [main] wire:86 -  << "O7[0xa4]@[0x90]>[0xf6][0xd3][0xc4][0xa1][0xab][0xa7]IoK[0x99][0xfc]5[0x9e][0xd9][0xbb]v[0xfc][0xe3][0x9f][0x1][0x9a][0xc1][0xa8]^[0xaa],[0x0][0x0]"
+2019-11-17 22:56:04,635 DEBUG [main] wire:72 -  << "[\r][\n]"
+2019-11-17 22:56:04,636 DEBUG [main] wire:72 -  << "0[\r][\n]"
+2019-11-17 22:56:04,637 DEBUG [main] wire:72 -  << "[\r][\n]"
+2019-11-17 22:56:04,637 DEBUG [main] BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@10b9db7b
+2019-11-17 22:56:04,638 DEBUG [main] BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2019-11-17 22:56:04,897  INFO [main] devpinoyLogger:58 - ************respone**************{
+    "total": 51957,
+    "limit": 10,
+    "skip": 0,
+    "data": [
+        {
+            "id": 43900,
+            "name": "Duracell - AAA Batteries (4-Pack)",
+            "type": "HardGood",
+            "price": 5.49,
+            "upc": "041333424019",
+            "shipping": 0,
+            "description": "Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack",
+            "manufacturer": "Duracell",
+            "model": "MN2400B4Z",
+            "url": "http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0208002",
+                    "name": "Alkaline Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 48530,
+            "name": "Duracell - AA 1.5V CopperTop Batteries (4-Pack)",
+            "type": "HardGood",
+            "price": 5.49,
+            "upc": "041333415017",
+            "shipping": 0,
+            "description": "Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more",
+            "manufacturer": "Duracell",
+            "model": "MN1500B4Z",
+            "url": "http://www.bestbuy.com/site/duracell-aa-1-5v-coppertop-batteries-4-pack/48530.p?id=1099385268988&skuId=48530&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/4853/48530_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0208002",
+                    "name": "Alkaline Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 127687,
+            "name": "Duracell - AA Batteries (8-Pack)",
+            "type": "HardGood",
+            "price": 7.49,
+            "upc": "041333825014",
+            "shipping": 0,
+            "description": "Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack",
+            "manufacturer": "Duracell",
+            "model": "MN1500B8Z",
+            "url": "http://www.bestbuy.com/site/duracell-aa-batteries-8-pack/127687.p?id=1051384045676&skuId=127687&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/1276/127687_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0208002",
+                    "name": "Alkaline Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 150115,
+            "name": "Energizer - MAX Batteries AA (4-Pack)",
+            "type": "HardGood",
+            "price": 4.99,
+            "upc": "039800011329",
+            "shipping": 0,
+            "description": "4-pack AA alkaline batteries; battery tester included",
+            "manufacturer": "Energizer",
+            "model": "E91BP-4",
+            "url": "http://www.bestbuy.com/site/energizer-max-batteries-aa-4-pack/150115.p?id=1051384046217&skuId=150115&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/1501/150115_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0208002",
+                    "name": "Alkaline Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 185230,
+            "name": "Duracell - C Batteries (4-Pack)",
+            "type": "HardGood",
+            "price": 8.99,
+            "upc": "041333440019",
+            "shipping": 0,
+            "description": "Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack",
+            "manufacturer": "Duracell",
+            "model": "MN1400R4Z",
+            "url": "http://www.bestbuy.com/site/duracell-c-batteries-4-pack/185230.p?id=1051384046486&skuId=185230&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/1852/185230_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0208002",
+                    "name": "Alkaline Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 185267,
+            "name": "Duracell - D Batteries (4-Pack)",
+            "type": "HardGood",
+            "price": 9.99,
+            "upc": "041333430010",
+            "shipping": 0,
+            "description": "Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack",
+            "manufacturer": "Duracell",
+            "model": "MN1300R4Z",
+            "url": "http://www.bestbuy.com/site/duracell-d-batteries-4-pack/185267.p?id=1051384046551&skuId=185267&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/1852/185267_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0208002",
+                    "name": "Alkaline Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 309062,
+            "name": "Pioneer - 4\" 3-Way Surface-Mount Speakers with IMPP Composite Cones (Pair) - Black",
+            "type": "HardGood",
+            "price": 144.99,
+            "upc": "012562165141",
+            "shipping": 0,
+            "description": "80W maximum power (20W RMS); 4\" IMPP composite cone woofer; 3/4\" horn tweeter",
+            "manufacturer": "Pioneer",
+            "model": "TS-X200",
+            "url": "http://www.bestbuy.com/site/pioneer-4-3-way-surface-mount-speakers-with-impp-composite-cones-pair-black/309062.p?id=1218643240258&skuId=309062&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/0309/0309062_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0300000",
+                    "name": "Car Electronics & GPS",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0302000",
+                    "name": "Car Audio",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "abcat0302005",
+                    "name": "Car Speakers",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat360500050015",
+                    "name": "4\" Car Speakers",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                }
+            ]
+        },
+        {
+            "id": 312290,
+            "name": "Duracell - 9V Batteries (2-Pack)",
+            "type": "HardGood",
+            "price": 7.99,
+            "upc": "041333216010",
+            "shipping": 0,
+            "description": "Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack",
+            "manufacturer": "Duracell",
+            "model": "MN1604B2Z",
+            "url": "http://www.bestbuy.com/site/duracell-9v-batteries-2-pack/312290.p?id=1051384050321&skuId=312290&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/3122/312290_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0208002",
+                    "name": "Alkaline Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 333179,
+            "name": "Energizer - N Cell E90 Batteries (2-Pack)",
+            "type": "HardGood",
+            "price": 5.99,
+            "upc": "039800013200",
+            "shipping": 0,
+            "description": "Alkaline batteries; 1.5V",
+            "manufacturer": "Energizer",
+            "model": "E90BP-2",
+            "url": "http://www.bestbuy.com/site/energizer-n-cell-e90-batteries-2-pack/333179.p?id=1185268509951&skuId=333179&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/3331/333179_sa.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0208006",
+                    "name": "Specialty Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat248700050021",
+                    "name": "Housewares",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat303600050001",
+                    "name": "Household Batteries",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat312300050015",
+                    "name": "Connected Home & Housewares",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                }
+            ]
+        },
+        {
+            "id": 346575,
+            "name": "Metra - Radio Installation Dash Kit for Most 1989-2000 Ford, Lincoln & Mercury Vehicles - Black",
+            "type": "HardGood",
+            "price": 16.99,
+            "upc": "086429002757",
+            "shipping": 0,
+            "description": "From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket",
+            "manufacturer": "Metra",
+            "model": "99-5512",
+            "url": "http://www.bestbuy.com/site/metra-radio-installation-dash-kit-for-most-1989-2000-ford-lincoln-mercury-vehicles-black/346575.p?id=1218118704590&skuId=346575&cmp=RMXCC",
+            "image": "http://img.bbystatic.com/BestBuy_US/images/products/3465/346575_rc.jpg",
+            "createdAt": "2016-11-17T17:58:03.298Z",
+            "updatedAt": "2016-11-17T17:58:03.298Z",
+            "categories": [
+                {
+                    "id": "abcat0300000",
+                    "name": "Car Electronics & GPS",
+                    "createdAt": "2016-11-17T17:57:04.285Z",
+                    "updatedAt": "2016-11-17T17:57:04.285Z"
+                },
+                {
+                    "id": "pcmcat165900050023",
+                    "name": "Car Installation Parts & Accessories",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050031",
+                    "name": "Deck Installation Parts",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat165900050033",
+                    "name": "Dash Installation Kits",
+                    "createdAt": "2016-11-17T17:57:05.399Z",
+                    "updatedAt": "2016-11-17T17:57:05.399Z"
+                },
+                {
+                    "id": "pcmcat331600050007",
+                    "name": "Car Audio Installation Parts",
+                    "createdAt": "2016-11-17T17:57:04.643Z",
+                    "updatedAt": "2016-11-17T17:57:04.643Z"
+                }
+            ]
+        }
+    ]
+}
