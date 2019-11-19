@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="rest.api.playground.test.getproduct.GetProductTest">
+      <class name="rest.api.playground.test.addproduct.test.AddProductTest">
         <methods>
-          <include name="fn_verify_getRequest_with_query_parameters"/>
+          <include name="fn_verify_post_Request"/>
         </methods>
-      </class> <!-- rest.api.playground.test.getproduct.GetProductTest -->
+      </class> <!-- rest.api.playground.test.addproduct.test.AddProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

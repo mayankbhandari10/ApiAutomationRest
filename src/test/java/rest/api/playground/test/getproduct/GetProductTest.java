@@ -1,10 +1,12 @@
 package rest.api.playground.test.getproduct;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
+import io.restassured.http.Header;
+import io.restassured.http.Headers;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import rest.api.playground.testbase.TestBase;
@@ -56,9 +58,7 @@ public class GetProductTest extends TestBase {
 			System.out.println(status);
 			String responseBody = response.getBody().prettyPrint();
 			log.info("************respone**************"+responseBody);
-
-
-		}
+	  }
 		catch(Exception e)
 		{
 			throw e;	
@@ -66,19 +66,26 @@ public class GetProductTest extends TestBase {
 	}
 	@Test(priority=3, description="verify the get request with query parametrs ")
 	public void fn_verify_getRequest_with_query_parameters() throws Exception{
+		int limit=3;
 		int id=43900;
-
 		log.info("*****************id is*******************"+id);
 		String baseuri=prep.getProperty("uri");
 		try
 		{
 			RestAssured.baseURI=baseuri;
 			RequestSpecification httpRequest= RestAssured.given().queryParam("$limit", 3);
-			
 			Response response = httpRequest.request(Method.GET, "/products");
 			String responseBody = response.getBody().prettyPrint();
 			System.out.println(responseBody);
 			log.info("************respone**************"+responseBody);
+			Assert.assertEquals(responseBody.contains("43900") /*Expected value*/, true);
+			Headers allHeaders = response.headers();
+			 
+			 // Iterate over all the Headers
+			 for(Header header : allHeaders)
+			 {
+			 System.out.println("Key: " + header.getName() + " Value: " + header.getValue());
+			 }
 		}
 		catch(Exception e)
 		{
