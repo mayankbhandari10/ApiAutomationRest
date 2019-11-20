@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6356" started-at="2019-11-19T17:24:03Z" finished-at="2019-11-19T17:24:10Z">
+  <suite name="Default suite" duration-ms="3310" started-at="2019-11-20T18:20:46Z" finished-at="2019-11-20T18:20:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6356" started-at="2019-11-19T17:24:03Z" finished-at="2019-11-19T17:24:10Z">
+    <test name="Default test" duration-ms="3310" started-at="2019-11-20T18:20:46Z" finished-at="2019-11-20T18:20:49Z">
       <class name="rest.api.playground.test.addproduct.test.AddProductTest">
-        <test-method status="PASS" signature="fn_verify_post_Request()[pri:0, instance:rest.api.playground.test.addproduct.test.AddProductTest@5025a98f]" name="fn_verify_post_Request" duration-ms="6306" started-at="2019-11-19T22:54:03Z" description="verify the get request with query parametrs " finished-at="2019-11-19T22:54:10Z">
+        <test-method status="PASS" signature="fn_verify_post_Request()[pri:0, instance:rest.api.playground.test.addproduct.test.AddProductTest@255b53dc]" name="fn_verify_post_Request" duration-ms="3288" started-at="2019-11-20T23:50:46Z" description="verify the get request with query parametrs" finished-at="2019-11-20T23:50:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fn_verify_post_Request -->

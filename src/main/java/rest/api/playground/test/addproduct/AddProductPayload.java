@@ -1,144 +1,135 @@
 package rest.api.playground.test.addproduct;
 
 public class AddProductPayload {
-	
-	public AddProductPayload(String image , String shipping,String price, String name, String upc, String description,String model,String type,String url,String manufacturer)
+
+	public AddProductPayload(String name , String type, int price,int shipping, String upc, String description,String model,String url,String manufacturer,String image)
 	{
-		this.image=image;
-		this.shipping= shipping;
-		this.price=price;
 		this.name=name;
+		this.type=type;
+		this.price=price;
+		this.shipping= shipping;
 		this.upc=upc;
 		this.description=description;
-		this.model=model;
-		this.type=type;
-		this.url=url;
 		this.manufacturer=manufacturer;
+		this.model=model;
+		this.url=url;
+		this.image=image;
+	}	
+
+	private String name;
+	private String type;
+	private int price;
+	private int shipping;
+	private String upc;
+	private String description;
+	private String manufacturer;
+	private String model;
+	private String url;
+	private String image;
+
+	public String getImage ()
+	{
+		return image;
 	}
-	
-	
-	    private String image;
 
-	    private String shipping;
+	public String getName ()
+	{
+		return name;
+	}
 
-	    private String price;
+	public void setImage (String image)
+	{
+		this.image = image;
+	}
 
-	    private String name;
+	public int getShipping ()
+	{
+		return shipping;
+	}
 
-	    private String upc;
+	public void setShipping (int shipping)
+	{
+		this.shipping = shipping;
+	}
 
-	    private String description;
+	public int getPrice ()
+	{
+		return price;
+	}
 
-	    private String model;
+	public void setPrice (int price)
+	{
+		this.price = price;
+	}
 
-	    private String type;
-	    
-	    private String url;
 
-	    private String manufacturer;
+	public void setName (String name)
+	{
+		this.name = name;
+	}
 
-	    public String getImage ()
-	    {
-	        return image;
-	    }
+	public String getUpc ()
+	{
+		return upc;
+	}
 
-	    public void setImage (String image)
-	    {
-	        this.image = image;
-	    }
+	public void setUpc (String upc)
+	{
+		this.upc = upc;
+	}
 
-	    public String getShipping ()
-	    {
-	        return shipping;
-	    }
+	public String getDescription ()
+	{
+		return description;
+	}
 
-	    public void setShipping (String shipping)
-	    {
-	        this.shipping = shipping;
-	    }
+	public void setDescription (String description)
+	{
+		this.description = description;
+	}
 
-	    public String getPrice ()
-	    {
-	        return price;
-	    }
+	public String getModel ()
+	{
+		return model;
+	}
 
-	    public void setPrice (String price)
-	    {
-	        this.price = price;
-	    }
+	public void setModel (String model)
+	{
+		this.model = model;
+	}
 
-	    public String getName ()
-	    {
-	        return name;
-	    }
+	public String getType ()
+	{
+		return type;
+	}
 
-	    public void setName (String name)
-	    {
-	        this.name = name;
-	    }
+	public void setType (String type)
+	{
+		this.type = type;
+	}
 
-	    public String getUpc ()
-	    {
-	        return upc;
-	    }
+	public String getUrl ()
+	{
+		return url;
+	}
 
-	    public void setUpc (String upc)
-	    {
-	        this.upc = upc;
-	    }
+	public void setUrl (String url)
+	{
+		this.url = url;
+	}
 
-	    public String getDescription ()
-	    {
-	        return description;
-	    }
+	public String getManufacturer ()
+	{
+		return manufacturer;
+	}
 
-	    public void setDescription (String description)
-	    {
-	        this.description = description;
-	    }
-
-	    public String getModel ()
-	    {
-	        return model;
-	    }
-
-	    public void setModel (String model)
-	    {
-	        this.model = model;
-	    }
-
-	    public String getType ()
-	    {
-	        return type;
-	    }
-
-	    public void setType (String type)
-	    {
-	        this.type = type;
-	    }
-
-	    public String getUrl ()
-	    {
-	        return url;
-	    }
-
-	    public void setUrl (String url)
-	    {
-	        this.url = url;
-	    }
-
-	    public String getManufacturer ()
-	    {
-	        return manufacturer;
-	    }
-
-	    public void setManufacturer (String manufacturer)
-	    {
-	        this.manufacturer = manufacturer;
-	    }
-	    @Override
-	    public String toString()
-	    {
-	        return "AddProductPayload [image = "+image+", shipping = "+shipping+", price = "+price+", name = "+name+", upc = "+upc+", description = "+description+", model = "+model+", type = "+type+", url = "+url+", manufacturer = "+manufacturer+"]";
-	    }
+	public void setManufacturer (String manufacturer)
+	{
+		this.manufacturer = manufacturer;
+	}
+	@Override
+	public String toString()
+	{
+		return "AddProductPayload [image = "+image+", shipping = "+shipping+", price = "+price+", name = "+name+", upc = "+upc+", description = "+description+", model = "+model+", type = "+type+", url = "+url+", manufacturer = "+manufacturer+"]";
+	}
 }
