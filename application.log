@@ -1,54 +1,55 @@
-2019-11-20 23:50:48,562 DEBUG [main] BasicClientConnectionManager:164 - Get connection for route {}->http://localhost:3030
-2019-11-20 23:50:48,593 DEBUG [main] DefaultClientConnectionOperator:176 - Connecting to localhost:3030
-2019-11-20 23:50:48,637 DEBUG [main] RequestAddCookies:122 - CookieSpec selected: ignoreCookies
-2019-11-20 23:50:48,642 DEBUG [main] RequestAuthCache:76 - Auth cache not set in the context
-2019-11-20 23:50:48,644 DEBUG [main] RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
-2019-11-20 23:50:48,646 DEBUG [main] RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
-2019-11-20 23:50:48,647 DEBUG [main] DefaultHttpClient:684 - Attempt 1 to execute request
-2019-11-20 23:50:48,649 DEBUG [main] DefaultClientConnection:276 - Sending request: POST /products HTTP/1.1
-2019-11-20 23:50:48,651 DEBUG [main] wire:72 -  >> "POST /products HTTP/1.1[\r][\n]"
-2019-11-20 23:50:48,654 DEBUG [main] wire:72 -  >> "Accept: */*[\r][\n]"
-2019-11-20 23:50:48,655 DEBUG [main] wire:72 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
-2019-11-20 23:50:48,657 DEBUG [main] wire:72 -  >> "Content-Length: 168[\r][\n]"
-2019-11-20 23:50:48,661 DEBUG [main] wire:72 -  >> "Host: localhost:3030[\r][\n]"
-2019-11-20 23:50:48,663 DEBUG [main] wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
-2019-11-20 23:50:48,671 DEBUG [main] wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
-2019-11-20 23:50:48,671 DEBUG [main] wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2019-11-20 23:50:48,676 DEBUG [main] wire:72 -  >> "[\r][\n]"
-2019-11-20 23:50:48,677 DEBUG [main] headers:280 - >> POST /products HTTP/1.1
-2019-11-20 23:50:48,678 DEBUG [main] headers:283 - >> Accept: */*
-2019-11-20 23:50:48,678 DEBUG [main] headers:283 - >> Content-Type: application/json; charset=UTF-8
-2019-11-20 23:50:48,681 DEBUG [main] headers:283 - >> Content-Length: 168
-2019-11-20 23:50:48,684 DEBUG [main] headers:283 - >> Host: localhost:3030
-2019-11-20 23:50:48,685 DEBUG [main] headers:283 - >> Connection: Keep-Alive
-2019-11-20 23:50:48,686 DEBUG [main] headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
-2019-11-20 23:50:48,688 DEBUG [main] headers:283 - >> Accept-Encoding: gzip,deflate
-2019-11-20 23:50:48,691 DEBUG [main] wire:86 -  >> "{"name":"string","type":"string","price":50,"shipping":5,"upc":"string","description":"string","manufacturer":"string","model":"string","url":"string","image":"string"}"
-2019-11-20 23:50:49,230 DEBUG [main] wire:72 -  << "HTTP/1.1 201 Created[\r][\n]"
-2019-11-20 23:50:49,233 DEBUG [main] wire:72 -  << "X-Powered-By: Express[\r][\n]"
-2019-11-20 23:50:49,234 DEBUG [main] wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2019-11-20 23:50:49,235 DEBUG [main] wire:72 -  << "Allow: GET,POST,PUT,PATCH,DELETE[\r][\n]"
-2019-11-20 23:50:49,236 DEBUG [main] wire:72 -  << "Vary: Accept, Accept-Encoding[\r][\n]"
-2019-11-20 23:50:49,236 DEBUG [main] wire:72 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2019-11-20 23:50:49,237 DEBUG [main] wire:72 -  << "Content-Length: 259[\r][\n]"
-2019-11-20 23:50:49,238 DEBUG [main] wire:72 -  << "ETag: W/"103-2J0z+lWMOKbhehfAGSN313RN+dA"[\r][\n]"
-2019-11-20 23:50:49,239 DEBUG [main] wire:72 -  << "Date: Wed, 20 Nov 2019 18:20:49 GMT[\r][\n]"
-2019-11-20 23:50:49,239 DEBUG [main] wire:72 -  << "Connection: keep-alive[\r][\n]"
-2019-11-20 23:50:49,240 DEBUG [main] wire:72 -  << "[\r][\n]"
-2019-11-20 23:50:49,242 DEBUG [main] DefaultClientConnection:261 - Receiving response: HTTP/1.1 201 Created
-2019-11-20 23:50:49,242 DEBUG [main] headers:264 - << HTTP/1.1 201 Created
-2019-11-20 23:50:49,243 DEBUG [main] headers:267 - << X-Powered-By: Express
-2019-11-20 23:50:49,244 DEBUG [main] headers:267 - << Access-Control-Allow-Origin: *
-2019-11-20 23:50:49,245 DEBUG [main] headers:267 - << Allow: GET,POST,PUT,PATCH,DELETE
-2019-11-20 23:50:49,245 DEBUG [main] headers:267 - << Vary: Accept, Accept-Encoding
-2019-11-20 23:50:49,246 DEBUG [main] headers:267 - << Content-Type: application/json; charset=utf-8
-2019-11-20 23:50:49,247 DEBUG [main] headers:267 - << Content-Length: 259
-2019-11-20 23:50:49,248 DEBUG [main] headers:267 - << ETag: W/"103-2J0z+lWMOKbhehfAGSN313RN+dA"
-2019-11-20 23:50:49,249 DEBUG [main] headers:267 - << Date: Wed, 20 Nov 2019 18:20:49 GMT
-2019-11-20 23:50:49,250 DEBUG [main] headers:267 - << Connection: keep-alive
-2019-11-20 23:50:49,259 DEBUG [main] DefaultHttpClient:511 - Connection can be kept alive indefinitely
-2019-11-20 23:50:49,290 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
-2019-11-20 23:50:49,292 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2019-11-20 23:50:49,372 DEBUG [main] wire:86 -  << "{"id":9999682,"name":"string","type":"string","price":50,"shipping":5,"upc":"string","description":"string","manufacturer":"string","model":"string","url":"string","image":"string","updatedAt":"2019-11-20T18:20:48.779Z","createdAt":"2019-11-20T18:20:48.779Z"}"
-2019-11-20 23:50:49,374 DEBUG [main] BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6c67e137
-2019-11-20 23:50:49,375 DEBUG [main] BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2019-11-21 22:54:57,233 DEBUG [main] BasicClientConnectionManager:164 - Get connection for route {}->http://localhost:3030
+2019-11-21 22:54:57,308 DEBUG [main] DefaultClientConnectionOperator:176 - Connecting to localhost:3030
+2019-11-21 22:54:57,437 DEBUG [main] RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2019-11-21 22:54:57,462 DEBUG [main] RequestAuthCache:76 - Auth cache not set in the context
+2019-11-21 22:54:57,465 DEBUG [main] RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
+2019-11-21 22:54:57,473 DEBUG [main] RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2019-11-21 22:54:57,475 DEBUG [main] DefaultHttpClient:684 - Attempt 1 to execute request
+2019-11-21 22:54:57,478 DEBUG [main] DefaultClientConnection:276 - Sending request: POST /products HTTP/1.1
+2019-11-21 22:54:57,482 DEBUG [main] wire:72 -  >> "POST /products HTTP/1.1[\r][\n]"
+2019-11-21 22:54:57,492 DEBUG [main] wire:72 -  >> "Accept: */*[\r][\n]"
+2019-11-21 22:54:57,495 DEBUG [main] wire:72 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2019-11-21 22:54:57,497 DEBUG [main] wire:72 -  >> "Content-Length: 168[\r][\n]"
+2019-11-21 22:54:57,500 DEBUG [main] wire:72 -  >> "Host: localhost:3030[\r][\n]"
+2019-11-21 22:54:57,509 DEBUG [main] wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2019-11-21 22:54:57,537 DEBUG [main] wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)[\r][\n]"
+2019-11-21 22:54:57,537 DEBUG [main] wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2019-11-21 22:54:57,552 DEBUG [main] wire:72 -  >> "[\r][\n]"
+2019-11-21 22:54:57,557 DEBUG [main] headers:280 - >> POST /products HTTP/1.1
+2019-11-21 22:54:57,562 DEBUG [main] headers:283 - >> Accept: */*
+2019-11-21 22:54:57,567 DEBUG [main] headers:283 - >> Content-Type: application/json; charset=UTF-8
+2019-11-21 22:54:57,582 DEBUG [main] headers:283 - >> Content-Length: 168
+2019-11-21 22:54:57,587 DEBUG [main] headers:283 - >> Host: localhost:3030
+2019-11-21 22:54:57,595 DEBUG [main] headers:283 - >> Connection: Keep-Alive
+2019-11-21 22:54:57,602 DEBUG [main] headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_111)
+2019-11-21 22:54:57,607 DEBUG [main] headers:283 - >> Accept-Encoding: gzip,deflate
+2019-11-21 22:54:57,617 DEBUG [main] wire:86 -  >> "{"name":"string","type":"string","price":50,"shipping":5,"upc":"string","description":"string","manufacturer":"string","model":"string","url":"string","image":"string"}"
+2019-11-21 22:54:58,347 DEBUG [main] wire:72 -  << "HTTP/1.1 201 Created[\r][\n]"
+2019-11-21 22:54:58,362 DEBUG [main] wire:72 -  << "X-Powered-By: Express[\r][\n]"
+2019-11-21 22:54:58,369 DEBUG [main] wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2019-11-21 22:54:58,374 DEBUG [main] wire:72 -  << "Allow: GET,POST,PUT,PATCH,DELETE[\r][\n]"
+2019-11-21 22:54:58,377 DEBUG [main] wire:72 -  << "Vary: Accept, Accept-Encoding[\r][\n]"
+2019-11-21 22:54:58,380 DEBUG [main] wire:72 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2019-11-21 22:54:58,383 DEBUG [main] wire:72 -  << "Content-Length: 259[\r][\n]"
+2019-11-21 22:54:58,386 DEBUG [main] wire:72 -  << "ETag: W/"103-o+9ECwxrKytQOzRnLcJFnVoUEN8"[\r][\n]"
+2019-11-21 22:54:58,389 DEBUG [main] wire:72 -  << "Date: Thu, 21 Nov 2019 17:24:58 GMT[\r][\n]"
+2019-11-21 22:54:58,391 DEBUG [main] wire:72 -  << "Connection: keep-alive[\r][\n]"
+2019-11-21 22:54:58,394 DEBUG [main] wire:72 -  << "[\r][\n]"
+2019-11-21 22:54:58,400 DEBUG [main] DefaultClientConnection:261 - Receiving response: HTTP/1.1 201 Created
+2019-11-21 22:54:58,403 DEBUG [main] headers:264 - << HTTP/1.1 201 Created
+2019-11-21 22:54:58,405 DEBUG [main] headers:267 - << X-Powered-By: Express
+2019-11-21 22:54:58,408 DEBUG [main] headers:267 - << Access-Control-Allow-Origin: *
+2019-11-21 22:54:58,410 DEBUG [main] headers:267 - << Allow: GET,POST,PUT,PATCH,DELETE
+2019-11-21 22:54:58,412 DEBUG [main] headers:267 - << Vary: Accept, Accept-Encoding
+2019-11-21 22:54:58,426 DEBUG [main] headers:267 - << Content-Type: application/json; charset=utf-8
+2019-11-21 22:54:58,430 DEBUG [main] headers:267 - << Content-Length: 259
+2019-11-21 22:54:58,433 DEBUG [main] headers:267 - << ETag: W/"103-o+9ECwxrKytQOzRnLcJFnVoUEN8"
+2019-11-21 22:54:58,436 DEBUG [main] headers:267 - << Date: Thu, 21 Nov 2019 17:24:58 GMT
+2019-11-21 22:54:58,439 DEBUG [main] headers:267 - << Connection: keep-alive
+2019-11-21 22:54:58,517 DEBUG [main] DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2019-11-21 22:54:58,719 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2019-11-21 22:54:58,719 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2019-11-21 22:54:59,014 DEBUG [main] wire:86 -  << "{"id":9999685,"name":"string","type":"string","price":50,"shipping":5,"upc":"string","description":"string","manufacturer":"string","model":"string","url":"string","image":"string","updatedAt":"2019-11-21T17:24:57.727Z","createdAt":"2019-11-21T17:24:57.727Z"}"
+2019-11-21 22:54:59,019 DEBUG [main] BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7e94d093
+2019-11-21 22:54:59,020 DEBUG [main] BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
+2019-11-21 22:54:59,028  INFO [main] devpinoyLogger:35 - *********************************Added the Product success************************************io.restassured.internal.RestAssuredResponseImpl@138caeca
