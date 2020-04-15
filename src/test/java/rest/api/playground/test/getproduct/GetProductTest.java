@@ -11,9 +11,12 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 import rest.api.playground.testbase.TestBase;
 public class GetProductTest extends TestBase {
+	String baseuri=prep.getProperty("uri");
+
 
 	public GetProductTest() throws Exception {
 		super();
+
 
 	}
 
@@ -21,7 +24,6 @@ public class GetProductTest extends TestBase {
 	public void fn_verify_login() throws Exception{
 		int id=43900;
 		log.info("*****************id is*******************"+id);
-		String baseuri=prep.getProperty("uri");
 		Response response = null;
 		try
 		{
@@ -47,7 +49,6 @@ public class GetProductTest extends TestBase {
 		int id=43900;
 
 		log.info("*****************id is*******************"+id);
-		String baseuri=prep.getProperty("uri");
 		try
 		{
 			RestAssured.baseURI=baseuri;
@@ -76,7 +77,6 @@ public class GetProductTest extends TestBase {
 		int limit=3;
 		int id=43900;
 		log.info("*****************id is*******************"+id);
-		String baseuri=prep.getProperty("uri");
 		try
 		{
 			RestAssured.baseURI=baseuri;
@@ -87,12 +87,6 @@ public class GetProductTest extends TestBase {
 			log.info("************respone**************"+responseBody);
 			Assert.assertEquals(responseBody.contains("43900") /*Expected value*/, true);
 			Headers allHeaders = response.headers();
-
-			// Iterate over all the Headers
-			for(Header header : allHeaders)
-			{
-				System.out.println("Key: " + header.getName() + " Value: " + header.getValue());
-			}
 		}
 		catch(Exception e)
 		{
@@ -107,22 +101,48 @@ public class GetProductTest extends TestBase {
 		int limit=3;
 		int id=43900;
 		log.info("*****************id is*******************"+id);
-		String baseuri=prep.getProperty("uri");
 		try
 		{
 			RestAssured.baseURI=baseuri;
 			RequestSpecification httpRequest= RestAssured.given().queryParam("$limit", 3);
 			Response response = httpRequest.request(Method.GET, "/products");
 			String responseBody = response.getBody().prettyPrint();
-            log.info("************respone**************"+responseBody);
-            int status_code=response.getStatusCode();
-            //Assert the Status code.
-            Assert.assertEquals(status_code /*actual value*/, 200 /*expected value*/, "200");
+			log.info("************respone**************"+responseBody);
+			int status_code=response.getStatusCode();
+			String statusline= response.getStatusLine();
+			//Assert the Status code.
+			Assert.assertEquals(status_code /*actual value*/, 200 /*expected value*/, "200");
+			//Assert status line
+			Assert.assertEquals(statusline /*actual value*/, "HTTP/1.1 200 OK" /*expected value*/, "Correct status code returned");
 
 		}
 		catch(Exception e)
 		{
 			throw e;  
+		}
+	}
+
+	private void fn_validate_the_headers_of_getProductAPI() throws Exception
+	{
+		try
+		{
+			RestAssured.baseURI=baseuri;
+			RequestSpecification httpRequest= RestAssured.given().queryParam("$limit", 3);
+			Response response = httpRequest.request(Method.GET, "/products");
+			String responseBody = response.getBody().prettyPrint();
+			System.out.println(responseBody);
+			log.info("************respone**************"+responseBody);
+			Assert.assertEquals(responseBody.contains("43900") /*Expected value*/, true);
+			Headers allHeaders = response.headers(); 
+			// Iterate over all the Headers
+			for(Header header : allHeaders)
+			{
+				System.out.println("Key: " + header.getName() + " Value: " + header.getValue());
+			}
+		}
+		catch(Exception e)
+		{
+			throw e;
 		}
 	}
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Default suite]">
-  <test parallel="none" name="Default test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
       <class name="rest.api.playground.test.getproduct.GetProductTest">
         <methods>
-          <include name="fn_verify_login"/>
+          <include name="fn_verify_the_statusCode_of_getProduct"/>
         </methods>
       </class> <!-- rest.api.playground.test.getproduct.GetProductTest -->
     </classes>
