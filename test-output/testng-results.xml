@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-04-15T08:18:36Z" name="Default suite" finished-at="2020-04-15T08:19:19Z" duration-ms="42741">
+    <groups>
+    </groups>
+    <test started-at="2020-04-15T08:18:36Z" name="Default test" finished-at="2020-04-15T08:19:19Z" duration-ms="42741">
+      <class name="rest.api.playground.test.getproduct.GetProductTest">
+        <test-method signature="fn_verify_the_statusCode_of_getProduct()[pri:3, instance:rest.api.playground.test.getproduct.GetProductTest@4082ba93]" started-at="2020-04-15T01:18:36Z" name="fn_verify_the_statusCode_of_getProduct" description="verify the status code of the GETPRODUCT API" finished-at="2020-04-15T01:19:19Z" duration-ms="42688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fn_verify_the_statusCode_of_getProduct -->
+      </class> <!-- rest.api.playground.test.getproduct.GetProductTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
