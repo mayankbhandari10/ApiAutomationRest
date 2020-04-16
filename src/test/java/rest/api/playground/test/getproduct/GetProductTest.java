@@ -81,12 +81,13 @@ public class GetProductTest extends TestBase {
 		{
 			RestAssured.baseURI=baseuri;
 			RequestSpecification httpRequest= RestAssured.given().queryParam("$limit", 3);
+
 			Response response = httpRequest.request(Method.GET, "/products");
 			String responseBody = response.getBody().prettyPrint();
 			System.out.println(responseBody);
 			log.info("************respone**************"+responseBody);
 			Assert.assertEquals(responseBody.contains("43900") /*Expected value*/, true);
-			Headers allHeaders = response.headers();
+
 		}
 		catch(Exception e)
 		{
@@ -104,7 +105,7 @@ public class GetProductTest extends TestBase {
 		try
 		{
 			RestAssured.baseURI=baseuri;
-			RequestSpecification httpRequest= RestAssured.given().queryParam("$limit", 3);
+			RequestSpecification httpRequest= RestAssured.given().queryParam("$limit", 1);
 			Response response = httpRequest.request(Method.GET, "/products");
 			String responseBody = response.getBody().prettyPrint();
 			log.info("************respone**************"+responseBody);
@@ -114,20 +115,23 @@ public class GetProductTest extends TestBase {
 			Assert.assertEquals(status_code /*actual value*/, 200 /*expected value*/, "200");
 			//Assert status line
 			Assert.assertEquals(statusline /*actual value*/, "HTTP/1.1 200 OK" /*expected value*/, "Correct status code returned");
-
 		}
 		catch(Exception e)
 		{
 			throw e;  
 		}
+		log.info("****************verify the status code of the GETPRODUCT API is Passed ***************");
 	}
 
+	@Test(priority=4, description="verify the status code of the GETPRODUCT API")
 	private void fn_validate_the_headers_of_getProductAPI() throws Exception
 	{
+		log.info("**********************verify the status test case is started**********************");
 		try
 		{
 			RestAssured.baseURI=baseuri;
-			RequestSpecification httpRequest= RestAssured.given().queryParam("$limit", 3);
+			RequestSpecification httpRequest= RestAssured.given().queryParam("$limit", 1);
+			System.out.println("httpRequest");
 			Response response = httpRequest.request(Method.GET, "/products");
 			String responseBody = response.getBody().prettyPrint();
 			System.out.println(responseBody);

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Mayank Bhandari\AppData\Local\Temp\testng-eclipse--109359313\testng-customsuite.xml</span>
+                    <span>C:\Users\Mayank Bhandari\AppData\Local\Temp\testng-eclipse--1856503820\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="rest.api.playground.test.getproduct.GetProductTest" class="method navigator-link" hash-for-method="fn_validate_the_headers_of_getProductAPI">fn_validate_the_headers_of_getProductAPI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="rest.api.playground.test.getproduct.GetProductTest" class="method navigator-link" hash-for-method="fn_verify_the_statusCode_of_getProduct">fn_verify_the_statusCode_of_getProduct</a> <!-- method navigator-link -->
@@ -125,6 +130,15 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="fn_validate_the_headers_of_getProductAPI">
+                  </a> <!-- fn_validate_the_headers_of_getProductAPI -->
+                  <span class="method-name">fn_validate_the_headers_of_getProductAPI</span>
+                  <em>
+(verify the status code of the GETPRODUCT API)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="fn_verify_the_statusCode_of_getProduct">
                   </a> <!-- fn_verify_the_statusCode_of_getProduct -->
                   <span class="method-name">fn_verify_the_statusCode_of_getProduct</span>
@@ -137,7 +151,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Mayank Bhandari\AppData\Local\Temp\testng-eclipse--109359313\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Mayank Bhandari\AppData\Local\Temp\testng-eclipse--1856503820\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -186,16 +200,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'fn_verify_the_statusCode_of_getProduct')
 data.setCell(0, 2, 'rest.api.playground.test.getproduct.GetProductTest')
-data.setCell(0, 3, 46269);
+data.setCell(0, 3, 4083);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'fn_validate_the_headers_of_getProductAPI')
+data.setCell(1, 2, 'rest.api.playground.test.getproduct.GetProductTest')
+data.setCell(1, 3, 772);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 46 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -225,6 +243,10 @@ return data;
               <div class="test-method">
                 <span class="method-name">fn_verify_the_statusCode_of_getProduct</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fn_validate_the_headers_of_getProductAPI</span>
+                <span class="method-start">4129 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
