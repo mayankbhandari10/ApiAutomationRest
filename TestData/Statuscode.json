@@ -1,0 +1,13 @@
+{
+"Status": {
+"OK": "200",
+"Created": "201",
+"Accepted":"202",
+"Bad Request":"400",
+"Unauthorized":"401",
+"Forbidden":"403",
+"Not Found":"404",
+"Method Not Allowed":"405",
+"Internal Server Error":"500"
+}
+}
