@@ -1,233 +1,54 @@
-2020-04-16 13:01:59,253  INFO [main] devpinoyLogger:104 - *****************id is*******************43900
-2020-04-16 13:02:01,332 DEBUG [main] BasicClientConnectionManager:164 - Get connection for route {}->http://localhost:3030
-2020-04-16 13:02:01,349 DEBUG [main] DefaultClientConnectionOperator:176 - Connecting to localhost:3030
-2020-04-16 13:02:01,394 DEBUG [main] RequestAddCookies:122 - CookieSpec selected: ignoreCookies
-2020-04-16 13:02:01,399 DEBUG [main] RequestAuthCache:76 - Auth cache not set in the context
-2020-04-16 13:02:01,401 DEBUG [main] RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
-2020-04-16 13:02:01,405 DEBUG [main] RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
-2020-04-16 13:02:01,407 DEBUG [main] DefaultHttpClient:684 - Attempt 1 to execute request
-2020-04-16 13:02:01,409 DEBUG [main] DefaultClientConnection:276 - Sending request: GET /products?%24limit=1 HTTP/1.1
-2020-04-16 13:02:01,410 DEBUG [main] wire:72 -  >> "GET /products?%24limit=1 HTTP/1.1[\r][\n]"
-2020-04-16 13:02:01,412 DEBUG [main] wire:72 -  >> "Accept: */*[\r][\n]"
-2020-04-16 13:02:01,413 DEBUG [main] wire:72 -  >> "Content-Length: 0[\r][\n]"
-2020-04-16 13:02:01,414 DEBUG [main] wire:72 -  >> "Host: localhost:3030[\r][\n]"
-2020-04-16 13:02:01,415 DEBUG [main] wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
-2020-04-16 13:02:01,418 DEBUG [main] wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/13.0.2)[\r][\n]"
-2020-04-16 13:02:01,419 DEBUG [main] wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2020-04-16 13:02:01,427 DEBUG [main] wire:72 -  >> "[\r][\n]"
-2020-04-16 13:02:01,428 DEBUG [main] headers:280 - >> GET /products?%24limit=1 HTTP/1.1
-2020-04-16 13:02:01,429 DEBUG [main] headers:283 - >> Accept: */*
-2020-04-16 13:02:01,430 DEBUG [main] headers:283 - >> Content-Length: 0
-2020-04-16 13:02:01,435 DEBUG [main] headers:283 - >> Host: localhost:3030
-2020-04-16 13:02:01,436 DEBUG [main] headers:283 - >> Connection: Keep-Alive
-2020-04-16 13:02:01,437 DEBUG [main] headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/13.0.2)
-2020-04-16 13:02:01,438 DEBUG [main] headers:283 - >> Accept-Encoding: gzip,deflate
-2020-04-16 13:02:02,556 DEBUG [main] wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
-2020-04-16 13:02:02,559 DEBUG [main] wire:72 -  << "X-Powered-By: Express[\r][\n]"
-2020-04-16 13:02:02,560 DEBUG [main] wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2020-04-16 13:02:02,561 DEBUG [main] wire:72 -  << "Allow: GET,POST,PUT,PATCH,DELETE[\r][\n]"
-2020-04-16 13:02:02,563 DEBUG [main] wire:72 -  << "Vary: Accept, Accept-Encoding[\r][\n]"
-2020-04-16 13:02:02,565 DEBUG [main] wire:72 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2020-04-16 13:02:02,566 DEBUG [main] wire:72 -  << "ETag: W/"474-0RQeDYjp3NwRBqbWXofx9aZkY7o"[\r][\n]"
-2020-04-16 13:02:02,568 DEBUG [main] wire:72 -  << "Content-Encoding: gzip[\r][\n]"
-2020-04-16 13:02:02,569 DEBUG [main] wire:72 -  << "Date: Thu, 16 Apr 2020 20:02:02 GMT[\r][\n]"
-2020-04-16 13:02:02,572 DEBUG [main] wire:72 -  << "Connection: keep-alive[\r][\n]"
-2020-04-16 13:02:02,575 DEBUG [main] wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
-2020-04-16 13:02:02,576 DEBUG [main] wire:72 -  << "[\r][\n]"
-2020-04-16 13:02:02,578 DEBUG [main] DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
-2020-04-16 13:02:02,579 DEBUG [main] headers:264 - << HTTP/1.1 200 OK
-2020-04-16 13:02:02,580 DEBUG [main] headers:267 - << X-Powered-By: Express
-2020-04-16 13:02:02,581 DEBUG [main] headers:267 - << Access-Control-Allow-Origin: *
-2020-04-16 13:02:02,582 DEBUG [main] headers:267 - << Allow: GET,POST,PUT,PATCH,DELETE
-2020-04-16 13:02:02,583 DEBUG [main] headers:267 - << Vary: Accept, Accept-Encoding
-2020-04-16 13:02:02,584 DEBUG [main] headers:267 - << Content-Type: application/json; charset=utf-8
-2020-04-16 13:02:02,585 DEBUG [main] headers:267 - << ETag: W/"474-0RQeDYjp3NwRBqbWXofx9aZkY7o"
-2020-04-16 13:02:02,585 DEBUG [main] headers:267 - << Content-Encoding: gzip
-2020-04-16 13:02:02,586 DEBUG [main] headers:267 - << Date: Thu, 16 Apr 2020 20:02:02 GMT
-2020-04-16 13:02:02,587 DEBUG [main] headers:267 - << Connection: keep-alive
-2020-04-16 13:02:02,588 DEBUG [main] headers:267 - << Transfer-Encoding: chunked
-2020-04-16 13:02:02,605 DEBUG [main] DefaultHttpClient:511 - Connection can be kept alive indefinitely
-2020-04-16 13:02:02,707 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
-2020-04-16 13:02:02,714 DEBUG [main] wire:72 -  << "a[\r][\n]"
-2020-04-16 13:02:02,716 DEBUG [main] wire:86 -  << "[0x1f]"
-2020-04-16 13:02:02,719 DEBUG [main] wire:86 -  << "[0x8b]"
-2020-04-16 13:02:02,722 DEBUG [main] wire:86 -  << "[0x8]"
-2020-04-16 13:02:02,724 DEBUG [main] wire:86 -  << "[0x0]"
-2020-04-16 13:02:02,726 DEBUG [main] wire:72 -  << "[0x0][0x0][0x0][0x0][0x0][\n]"
-2020-04-16 13:02:02,728 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2020-04-16 13:02:03,087 DEBUG [main] wire:72 -  << "[\r][\n]"
-2020-04-16 13:02:03,089 DEBUG [main] wire:72 -  << "21a[\r][\n]"
-2020-04-16 13:02:03,090 DEBUG [main] wire:72 -  << "[0xbd][0x93]Qk[0xdb]0[0x14][0x85][0xff][0x8a][0xd0]C[0xd8] [0xb6]%[nb[0x97]0[0x92][0x14][0x96][0xb1]u[0xb][0xdd][\n]"
-2020-04-16 13:02:03,097 DEBUG [main] wire:72 -  << "cc[0x14]Y[0xba]K[0xb4][0xd8][0x96][0x90][0xe4][0x86][0xac][0xec][0xbf]Oq[0xb2]f[0xf4]am_[0x86][0xc1][0xf][0xe7][0x1e][0xee]w[0xee][0xf5][0xf5][0x1d][0xf6][0xda][0xf3][0x1a][0x97]9-[0xf2][0xd1][0x10][0xd7][0xaa]Q[0x1e][0x97]t[0x88][0xdd]F[0x19]\[0x92]![0x96][0xdc]s\~[0xbd][0xc3]J[0xe2][0x92]e[0x5][0x9]Z[0xcb][0x1b][0xc0]%[0xbe][0xe8],[0x17]P[0xd7](B[0xd3][0xe9][0x14][0xcd][0xb8][0xf7]`[0x15]8[0xf4][0x82]EK.6/[0xf1][0x10][0xfb][0x9d][0xd9][[0x17][0xdc][0xca][0xd7]Z[0xcb][0xa0][0x18][0xab]D[0x90][0xf2][0x98][0x15]C[0xdc][0x19][0x11][0xaa][0x84][0xd1],[0xcb]X[0xca][0x8]-[0x82][0xc3][0xad][0x95]1[0xaa]][0x1d][0xf8][0xe0][0x84]U[0xc6]+[0xdd][0x6][0xe7]\7[0x86]{U[0xd5][0x80][0xb6][0xca][0xaf][0x91][0x83][0x1a][0x84]G[0xfd][0xdb][0xea]V[0x9]$[0xe1]6[0xf4]w[0xe7]}$[0xa7]~[0xc2]9[0xba][0xb8][0xbe][0x9a][0xbe][0xfb]0[0x8b][0x96]z[0xb][0x16]--8[0xb0][0xb7][0x80]<[0x88]u[0xab]k[0xbd][0xda][0x9d]#[0x16][0x99][0x90]8[0xc0][0x1b][0xde]v[0xdf][0xb9][0xf0][0x9d][0x5][0xfb][0xd7][0x8c][0xfb][0x8a][0x96][0x10]V[0x85]/[0xdf][0x87][0xa0]d[0xc6][0xbe][0x4][0xad][0xb3]{e[0xed][0xbd])[0x93]d[0xbb][0xdd][0xc6][0x15]8_u[0xbb]X[0xe8]&q[0xca]C"[0x8f][\r]"[0xce]yT[0xfd]YQt[0xe0]%[0xfd]Bc[0xf3]J[0xc9][0x9]%9[0xcd][0xc6][0x8c][0x8c][0x18]e[0xf9][0xc0]m[0xba]7r[0xd2][0x97][0x7][0xa2]1[0x93][0xab][0xcb][0xcf][0xf3]y[0x0][0xaa][0x86][0xaf][0xe0][0x84]T[0xcd]*[0xae][0xaa][0x9d][0xf3]a)[0xa2][0x87][0xce]B[0x80]Y[0xb7][0xbb][0xb9][0xfe][0x98][0xf4]^[0x97][0x18][0xab]e'[0xbc][0xeb]a[0x7][0xe2][0x8d][0xe3][0xf1][0xf][0xb3][\n]"
-2020-04-16 13:02:03,102 DEBUG [main] wire:86 -  << "[0xfd][0x84][0x5][0xee]AN[0xc3]W[0xc7])[0xa1]g[0x11][0xa5][0x11][0x1d]}[0xa2][0xa3]2[0x1f][0x97]$[0x8b][0xd3]b[0xdc][0xcf]i[0xe4]Sl"[0x98]Vz?[0xe0][0xfd][0xc9]`^[0x5][0x95][0xa4]dLH[0x8a][0xef]ogZox[0xad]Z8][0xcd][0xbf][0xc3][0x8c]J[0xc2][0xe2]t[0x9c]?[0x12][0xe6]d[0xfb]5<[0xf2][0x8d]hB[0x80][0x94][0x8d]G[0x84][0x90]<[0x84][0xa0][0xa7][0x14][0xb][0xdd]9[0xd8]r[0xfb][0x4]z[0x1e]gE[0xf1]8[0xfd]h{@[0xcf]Hvv[0xa0][0x93][0x87][0xf4][0xb5][0xae][0xe5][0xff]ZBF[0xd3][0xec][0x10][0x83][0xe6][0xa7][0x18]s[0xdd][0xb6]"
-2020-04-16 13:02:03,109 DEBUG [main] wire:86 -  << "[0xe1][0xf7][0x1][0x89][0x16][0xba][0x1]4@[0xcf][0xd8][0xca]3[0xe3]|[0xb][0xcf]oUA?[0x17]t[0x4][0x0][0x0]"
-2020-04-16 13:02:03,110 DEBUG [main] wire:72 -  << "[\r][\n]"
-2020-04-16 13:02:03,116 DEBUG [main] wire:72 -  << "0[\r][\n]"
-2020-04-16 13:02:03,118 DEBUG [main] wire:72 -  << "[\r][\n]"
-2020-04-16 13:02:03,119 DEBUG [main] BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3491e86e
-2020-04-16 13:02:03,120 DEBUG [main] BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
-2020-04-16 13:02:03,299  INFO [main] devpinoyLogger:111 - ************respone**************{
-    "total": 51957,
-    "limit": 1,
-    "skip": 0,
-    "data": [
-        {
-            "id": 43900,
-            "name": "Duracell - AAA Batteries (4-Pack)",
-            "type": "HardGood",
-            "price": 5.49,
-            "upc": "041333424019",
-            "shipping": 0,
-            "description": "Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack",
-            "manufacturer": "Duracell",
-            "model": "MN2400B4Z",
-            "url": "http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC",
-            "image": "http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg",
-            "createdAt": "2016-11-17T17:58:03.298Z",
-            "updatedAt": "2016-11-17T17:58:03.298Z",
-            "categories": [
-                {
-                    "id": "abcat0208002",
-                    "name": "Alkaline Batteries",
-                    "createdAt": "2016-11-17T17:57:04.285Z",
-                    "updatedAt": "2016-11-17T17:57:04.285Z"
-                },
-                {
-                    "id": "pcmcat248700050021",
-                    "name": "Housewares",
-                    "createdAt": "2016-11-17T17:57:05.399Z",
-                    "updatedAt": "2016-11-17T17:57:05.399Z"
-                },
-                {
-                    "id": "pcmcat303600050001",
-                    "name": "Household Batteries",
-                    "createdAt": "2016-11-17T17:57:04.285Z",
-                    "updatedAt": "2016-11-17T17:57:04.285Z"
-                },
-                {
-                    "id": "pcmcat312300050015",
-                    "name": "Connected Home & Housewares",
-                    "createdAt": "2016-11-17T17:57:04.285Z",
-                    "updatedAt": "2016-11-17T17:57:04.285Z"
-                }
-            ]
-        }
-    ]
-}
-2020-04-16 13:02:03,306  INFO [main] devpinoyLogger:123 - ****************verify the status code of the GETPRODUCT API is Passed ***************
-2020-04-16 13:02:03,362  INFO [main] devpinoyLogger:129 - verify the status test case is started
-2020-04-16 13:02:03,438 DEBUG [main] BasicClientConnectionManager:164 - Get connection for route {}->http://localhost:3030
-2020-04-16 13:02:03,441 DEBUG [main] DefaultClientConnectionOperator:176 - Connecting to localhost:3030
-2020-04-16 13:02:03,443 DEBUG [main] RequestAddCookies:122 - CookieSpec selected: ignoreCookies
-2020-04-16 13:02:03,444 DEBUG [main] RequestAuthCache:76 - Auth cache not set in the context
-2020-04-16 13:02:03,446 DEBUG [main] RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
-2020-04-16 13:02:03,446 DEBUG [main] RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
-2020-04-16 13:02:03,447 DEBUG [main] DefaultHttpClient:684 - Attempt 1 to execute request
-2020-04-16 13:02:03,448 DEBUG [main] DefaultClientConnection:276 - Sending request: GET /products?%24limit=1 HTTP/1.1
-2020-04-16 13:02:03,449 DEBUG [main] wire:72 -  >> "GET /products?%24limit=1 HTTP/1.1[\r][\n]"
-2020-04-16 13:02:03,450 DEBUG [main] wire:72 -  >> "Accept: */*[\r][\n]"
-2020-04-16 13:02:03,450 DEBUG [main] wire:72 -  >> "Content-Length: 0[\r][\n]"
-2020-04-16 13:02:03,451 DEBUG [main] wire:72 -  >> "Host: localhost:3030[\r][\n]"
-2020-04-16 13:02:03,452 DEBUG [main] wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
-2020-04-16 13:02:03,453 DEBUG [main] wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/13.0.2)[\r][\n]"
-2020-04-16 13:02:03,454 DEBUG [main] wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2020-04-16 13:02:03,456 DEBUG [main] wire:72 -  >> "[\r][\n]"
-2020-04-16 13:02:03,457 DEBUG [main] headers:280 - >> GET /products?%24limit=1 HTTP/1.1
-2020-04-16 13:02:03,458 DEBUG [main] headers:283 - >> Accept: */*
-2020-04-16 13:02:03,459 DEBUG [main] headers:283 - >> Content-Length: 0
-2020-04-16 13:02:03,460 DEBUG [main] headers:283 - >> Host: localhost:3030
-2020-04-16 13:02:03,461 DEBUG [main] headers:283 - >> Connection: Keep-Alive
-2020-04-16 13:02:03,462 DEBUG [main] headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/13.0.2)
-2020-04-16 13:02:03,463 DEBUG [main] headers:283 - >> Accept-Encoding: gzip,deflate
-2020-04-16 13:02:04,089 DEBUG [main] wire:72 -  << "HTTP/1.1 200 OK[\r][\n]"
-2020-04-16 13:02:04,090 DEBUG [main] wire:72 -  << "X-Powered-By: Express[\r][\n]"
-2020-04-16 13:02:04,091 DEBUG [main] wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
-2020-04-16 13:02:04,092 DEBUG [main] wire:72 -  << "Allow: GET,POST,PUT,PATCH,DELETE[\r][\n]"
-2020-04-16 13:02:04,092 DEBUG [main] wire:72 -  << "Vary: Accept, Accept-Encoding[\r][\n]"
-2020-04-16 13:02:04,093 DEBUG [main] wire:72 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
-2020-04-16 13:02:04,094 DEBUG [main] wire:72 -  << "ETag: W/"474-0RQeDYjp3NwRBqbWXofx9aZkY7o"[\r][\n]"
-2020-04-16 13:02:04,094 DEBUG [main] wire:72 -  << "Content-Encoding: gzip[\r][\n]"
-2020-04-16 13:02:04,095 DEBUG [main] wire:72 -  << "Date: Thu, 16 Apr 2020 20:02:04 GMT[\r][\n]"
-2020-04-16 13:02:04,095 DEBUG [main] wire:72 -  << "Connection: keep-alive[\r][\n]"
-2020-04-16 13:02:04,096 DEBUG [main] wire:72 -  << "Transfer-Encoding: chunked[\r][\n]"
-2020-04-16 13:02:04,097 DEBUG [main] wire:72 -  << "[\r][\n]"
-2020-04-16 13:02:04,097 DEBUG [main] DefaultClientConnection:261 - Receiving response: HTTP/1.1 200 OK
-2020-04-16 13:02:04,098 DEBUG [main] headers:264 - << HTTP/1.1 200 OK
-2020-04-16 13:02:04,099 DEBUG [main] headers:267 - << X-Powered-By: Express
-2020-04-16 13:02:04,100 DEBUG [main] headers:267 - << Access-Control-Allow-Origin: *
-2020-04-16 13:02:04,100 DEBUG [main] headers:267 - << Allow: GET,POST,PUT,PATCH,DELETE
-2020-04-16 13:02:04,101 DEBUG [main] headers:267 - << Vary: Accept, Accept-Encoding
-2020-04-16 13:02:04,102 DEBUG [main] headers:267 - << Content-Type: application/json; charset=utf-8
-2020-04-16 13:02:04,102 DEBUG [main] headers:267 - << ETag: W/"474-0RQeDYjp3NwRBqbWXofx9aZkY7o"
-2020-04-16 13:02:04,103 DEBUG [main] headers:267 - << Content-Encoding: gzip
-2020-04-16 13:02:04,103 DEBUG [main] headers:267 - << Date: Thu, 16 Apr 2020 20:02:04 GMT
-2020-04-16 13:02:04,104 DEBUG [main] headers:267 - << Connection: keep-alive
-2020-04-16 13:02:04,104 DEBUG [main] headers:267 - << Transfer-Encoding: chunked
-2020-04-16 13:02:04,105 DEBUG [main] DefaultHttpClient:511 - Connection can be kept alive indefinitely
-2020-04-16 13:02:04,106 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
-2020-04-16 13:02:04,107 DEBUG [main] wire:72 -  << "a[\r][\n]"
-2020-04-16 13:02:04,107 DEBUG [main] wire:86 -  << "[0x1f]"
-2020-04-16 13:02:04,108 DEBUG [main] wire:86 -  << "[0x8b]"
-2020-04-16 13:02:04,109 DEBUG [main] wire:86 -  << "[0x8]"
-2020-04-16 13:02:04,109 DEBUG [main] wire:86 -  << "[0x0]"
-2020-04-16 13:02:04,110 DEBUG [main] wire:72 -  << "[0x0][0x0][0x0][0x0][0x0][\n]"
-2020-04-16 13:02:04,110 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
-2020-04-16 13:02:04,112 DEBUG [main] wire:72 -  << "[\r][\n]"
-2020-04-16 13:02:04,113 DEBUG [main] wire:72 -  << "21a[\r][\n]"
-2020-04-16 13:02:04,114 DEBUG [main] wire:72 -  << "[0xbd][0x93]Qk[0xdb]0[0x14][0x85][0xff][0x8a][0xd0]C[0xd8] [0xb6]%[nb[0x97]0[0x92][0x14][0x96][0xb1]u[0xb][0xdd][\n]"
-2020-04-16 13:02:04,114 DEBUG [main] wire:72 -  << "cc[0x14]Y[0xba]K[0xb4][0xd8][0x96][0x90][0xe4][0x86][0xac][0xec][0xbf]Oq[0xb2]f[0xf4]am_[0x86][0xc1][0xf][0xe7][0x1e][0xee]w[0xee][0xf5][0xf5][0x1d][0xf6][0xda][0xf3][0x1a][0x97]9-[0xf2][0xd1][0x10][0xd7][0xaa]Q[0x1e][0x97]t[0x88][0xdd]F[0x19]\[0x92]![0x96][0xdc]s\~[0xbd][0xc3]J[0xe2][0x92]e[0x5][0x9]Z[0xcb][0x1b][0xc0]%[0xbe][0xe8],[0x17]P[0xd7](B[0xd3][0xe9][0x14][0xcd][0xb8][0xf7]`[0x15]8[0xf4][0x82]EK.6/[0xf1][0x10][0xfb][0x9d][0xd9][[0x17][0xdc][0xca][0xd7]Z[0xcb][0xa0][0x18][0xab]D[0x90][0xf2][0x98][0x15]C[0xdc][0x19][0x11][0xaa][0x84][0xd1],[0xcb]X[0xca][0x8]-[0x82][0xc3][0xad][0x95]1[0xaa]][0x1d][0xf8][0xe0][0x84]U[0xc6]+[0xdd][0x6][0xe7]\7[0x86]{U[0xd5][0x80][0xb6][0xca][0xaf][0x91][0x83][0x1a][0x84]G[0xfd][0xdb][0xea]V[0x9]$[0xe1]6[0xf4]w[0xe7]}$[0xa7]~[0xc2]9[0xba][0xb8][0xbe][0x9a][0xbe][0xfb]0[0x8b][0x96]z[0xb][0x16]--8[0xb0][0xb7][0x80]<[0x88]u[0xab]k[0xbd][0xda][0x9d]#[0x16][0x99][0x90]8[0xc0][0x1b][0xde]v[0xdf][0xb9][0xf0][0x9d][0x5][0xfb][0xd7][0x8c][0xfb][0x8a][0x96][0x10]V[0x85]/[0xdf][0x87][0xa0]d[0xc6][0xbe][0x4][0xad][0xb3]{e[0xed][0xbd])[0x93]d[0xbb][0xdd][0xc6][0x15]8_u[0xbb]X[0xe8]&q[0xca]C"[0x8f][\r]"[0xce]yT[0xfd]YQt[0xe0]%[0xfd]Bc[0xf3]J[0xc9][0x9]%9[0xcd][0xc6][0x8c][0x8c][0x18]e[0xf9][0xc0]m[0xba]7r[0xd2][0x97][0x7][0xa2]1[0x93][0xab][0xcb][0xcf][0xf3]y[0x0][0xaa][0x86][0xaf][0xe0][0x84]T[0xcd]*[0xae][0xaa][0x9d][0xf3]a)[0xa2][0x87][0xce]B[0x80]Y[0xb7][0xbb][0xb9][0xfe][0x98][0xf4]^[0x97][0x18][0xab]e'[0xbc][0xeb]a[0x7][0xe2][0x8d][0xe3][0xf1][0xf][0xb3][\n]"
-2020-04-16 13:02:04,115 DEBUG [main] wire:86 -  << "[0xfd][0x84][0x5][0xee]AN[0xc3]W[0xc7])[0xa1]g[0x11][0xa5][0x11][0x1d]}[0xa2][0xa3]2[0x1f][0x97]$[0x8b][0xd3]b[0xdc][0xcf]i[0xe4]Sl"[0x98]Vz?[0xe0][0xfd][0xc9]`^[0x5][0x95][0xa4]dLH[0x8a][0xef]ogZox[0xad]Z8][0xcd][0xbf][0xc3][0x8c]J[0xc2][0xe2]t[0x9c]?[0x12][0xe6]d[0xfb]5<[0xf2][0x8d]hB[0x80][0x94][0x8d]G[0x84][0x90]<[0x84][0xa0][0xa7][0x14][0xb][0xdd]9[0xd8]r[0xfb][0x4]z[0x1e]gE[0xf1]8[0xfd]h{@[0xcf]Hvv[0xa0][0x93][0x87][0xf4][0xb5][0xae][0xe5][0xff]ZBF[0xd3][0xec][0x10][0x83][0xe6][0xa7][0x18]s[0xdd][0xb6]"
-2020-04-16 13:02:04,115 DEBUG [main] wire:86 -  << "[0xe1][0xf7][0x1][0x89][0x16][0xba][0x1]4@[0xcf][0xd8][0xca]3[0xe3]|[0xb][0xcf]oUA?[0x17]t[0x4][0x0][0x0]"
-2020-04-16 13:02:04,115 DEBUG [main] wire:72 -  << "[\r][\n]"
-2020-04-16 13:02:04,116 DEBUG [main] wire:72 -  << "0[\r][\n]"
-2020-04-16 13:02:04,116 DEBUG [main] wire:72 -  << "[\r][\n]"
-2020-04-16 13:02:04,117 DEBUG [main] BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6f4ade6e
-2020-04-16 13:02:04,117 DEBUG [main] BasicClientConnectionManager:228 - Connection can be kept alive indefinitely
-2020-04-16 13:02:04,124  INFO [main] devpinoyLogger:138 - ************respone**************{
-    "total": 51957,
-    "limit": 1,
-    "skip": 0,
-    "data": [
-        {
-            "id": 43900,
-            "name": "Duracell - AAA Batteries (4-Pack)",
-            "type": "HardGood",
-            "price": 5.49,
-            "upc": "041333424019",
-            "shipping": 0,
-            "description": "Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack",
-            "manufacturer": "Duracell",
-            "model": "MN2400B4Z",
-            "url": "http://www.bestbuy.com/site/duracell-aaa-batteries-4-pack/43900.p?id=1051384074145&skuId=43900&cmp=RMXCC",
-            "image": "http://img.bbystatic.com/BestBuy_US/images/products/4390/43900_sa.jpg",
-            "createdAt": "2016-11-17T17:58:03.298Z",
-            "updatedAt": "2016-11-17T17:58:03.298Z",
-            "categories": [
-                {
-                    "id": "abcat0208002",
-                    "name": "Alkaline Batteries",
-                    "createdAt": "2016-11-17T17:57:04.285Z",
-                    "updatedAt": "2016-11-17T17:57:04.285Z"
-                },
-                {
-                    "id": "pcmcat248700050021",
-                    "name": "Housewares",
-                    "createdAt": "2016-11-17T17:57:05.399Z",
-                    "updatedAt": "2016-11-17T17:57:05.399Z"
-                },
-                {
-                    "id": "pcmcat303600050001",
-                    "name": "Household Batteries",
-                    "createdAt": "2016-11-17T17:57:04.285Z",
-                    "updatedAt": "2016-11-17T17:57:04.285Z"
-                },
-                {
-                    "id": "pcmcat312300050015",
-                    "name": "Connected Home & Housewares",
-                    "createdAt": "2016-11-17T17:57:04.285Z",
-                    "updatedAt": "2016-11-17T17:57:04.285Z"
-                }
-            ]
-        }
-    ]
-}
+2020-04-22 01:24:43,676 DEBUG [main] BasicClientConnectionManager:164 - Get connection for route {}->http://localhost:3030
+2020-04-22 01:24:43,708 DEBUG [main] DefaultClientConnectionOperator:176 - Connecting to localhost:3030
+2020-04-22 01:24:43,744 DEBUG [main] RequestAddCookies:122 - CookieSpec selected: ignoreCookies
+2020-04-22 01:24:43,750 DEBUG [main] RequestAuthCache:76 - Auth cache not set in the context
+2020-04-22 01:24:43,751 DEBUG [main] RequestTargetAuthentication:79 - Target auth state: UNCHALLENGED
+2020-04-22 01:24:43,753 DEBUG [main] RequestProxyAuthentication:88 - Proxy auth state: UNCHALLENGED
+2020-04-22 01:24:43,754 DEBUG [main] DefaultHttpClient:684 - Attempt 1 to execute request
+2020-04-22 01:24:43,755 DEBUG [main] DefaultClientConnection:276 - Sending request: POST /products HTTP/1.1
+2020-04-22 01:24:43,756 DEBUG [main] wire:72 -  >> "POST /products HTTP/1.1[\r][\n]"
+2020-04-22 01:24:43,758 DEBUG [main] wire:72 -  >> "Accept: */*[\r][\n]"
+2020-04-22 01:24:43,759 DEBUG [main] wire:72 -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2020-04-22 01:24:43,759 DEBUG [main] wire:72 -  >> "Content-Length: 102[\r][\n]"
+2020-04-22 01:24:43,760 DEBUG [main] wire:72 -  >> "Host: localhost:3030[\r][\n]"
+2020-04-22 01:24:43,761 DEBUG [main] wire:72 -  >> "Connection: Keep-Alive[\r][\n]"
+2020-04-22 01:24:43,762 DEBUG [main] wire:72 -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/13.0.2)[\r][\n]"
+2020-04-22 01:24:43,763 DEBUG [main] wire:72 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2020-04-22 01:24:43,767 DEBUG [main] wire:72 -  >> "[\r][\n]"
+2020-04-22 01:24:43,768 DEBUG [main] headers:280 - >> POST /products HTTP/1.1
+2020-04-22 01:24:43,769 DEBUG [main] headers:283 - >> Accept: */*
+2020-04-22 01:24:43,770 DEBUG [main] headers:283 - >> Content-Type: application/json; charset=UTF-8
+2020-04-22 01:24:43,771 DEBUG [main] headers:283 - >> Content-Length: 102
+2020-04-22 01:24:43,773 DEBUG [main] headers:283 - >> Host: localhost:3030
+2020-04-22 01:24:43,774 DEBUG [main] headers:283 - >> Connection: Keep-Alive
+2020-04-22 01:24:43,774 DEBUG [main] headers:283 - >> User-Agent: Apache-HttpClient/4.5.2 (Java/13.0.2)
+2020-04-22 01:24:43,775 DEBUG [main] headers:283 - >> Accept-Encoding: gzip,deflate
+2020-04-22 01:24:43,776 DEBUG [main] wire:86 -  >> "{"price":100,"name":"toys","upc":"12233344","description":"Awsome","model":"NP235","type":"hard type"}"
+2020-04-22 01:24:44,074 DEBUG [main] wire:72 -  << "HTTP/1.1 201 Created[\r][\n]"
+2020-04-22 01:24:44,077 DEBUG [main] wire:72 -  << "X-Powered-By: Express[\r][\n]"
+2020-04-22 01:24:44,077 DEBUG [main] wire:72 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2020-04-22 01:24:44,078 DEBUG [main] wire:72 -  << "Allow: GET,POST,PUT,PATCH,DELETE[\r][\n]"
+2020-04-22 01:24:44,078 DEBUG [main] wire:72 -  << "Vary: Accept, Accept-Encoding[\r][\n]"
+2020-04-22 01:24:44,079 DEBUG [main] wire:72 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2020-04-22 01:24:44,080 DEBUG [main] wire:72 -  << "Content-Length: 193[\r][\n]"
+2020-04-22 01:24:44,081 DEBUG [main] wire:72 -  << "ETag: W/"c1-8iW6m4JNhhc5eWXIqgrCjHcoAqU"[\r][\n]"
+2020-04-22 01:24:44,082 DEBUG [main] wire:72 -  << "Date: Wed, 22 Apr 2020 08:24:44 GMT[\r][\n]"
+2020-04-22 01:24:44,082 DEBUG [main] wire:72 -  << "Connection: keep-alive[\r][\n]"
+2020-04-22 01:24:44,083 DEBUG [main] wire:72 -  << "[\r][\n]"
+2020-04-22 01:24:44,084 DEBUG [main] DefaultClientConnection:261 - Receiving response: HTTP/1.1 201 Created
+2020-04-22 01:24:44,085 DEBUG [main] headers:264 - << HTTP/1.1 201 Created
+2020-04-22 01:24:44,086 DEBUG [main] headers:267 - << X-Powered-By: Express
+2020-04-22 01:24:44,086 DEBUG [main] headers:267 - << Access-Control-Allow-Origin: *
+2020-04-22 01:24:44,087 DEBUG [main] headers:267 - << Allow: GET,POST,PUT,PATCH,DELETE
+2020-04-22 01:24:44,088 DEBUG [main] headers:267 - << Vary: Accept, Accept-Encoding
+2020-04-22 01:24:44,088 DEBUG [main] headers:267 - << Content-Type: application/json; charset=utf-8
+2020-04-22 01:24:44,089 DEBUG [main] headers:267 - << Content-Length: 193
+2020-04-22 01:24:44,089 DEBUG [main] headers:267 - << ETag: W/"c1-8iW6m4JNhhc5eWXIqgrCjHcoAqU"
+2020-04-22 01:24:44,090 DEBUG [main] headers:267 - << Date: Wed, 22 Apr 2020 08:24:44 GMT
+2020-04-22 01:24:44,090 DEBUG [main] headers:267 - << Connection: keep-alive
+2020-04-22 01:24:44,097 DEBUG [main] DefaultHttpClient:511 - Connection can be kept alive indefinitely
+2020-04-22 01:24:44,123 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:544 - Parsing response as: application/json; charset=utf-8
+2020-04-22 01:24:44,125 DEBUG [main] RequestSpecificationImpl$RestAssuredHttpBuilder:547 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2020-04-22 01:24:44,177 DEBUG [main] wire:86 -  << "{"id":9999684,"price":100,"name":"toys","upc":"12233344","description":"Awsome","model":"NP235","type":"hard type","updatedAt":"2020-04-22T08:24:43.787Z","createdAt":"2020-04-22T08:24:43.787Z"}"
+2020-04-22 01:24:44,182 DEBUG [main] BasicClientConnectionManager:203 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2ab0702e
+2020-04-22 01:24:44,183 DEBUG [main] BasicClientConnectionManager:228 - Connection can be kept alive indefinitely

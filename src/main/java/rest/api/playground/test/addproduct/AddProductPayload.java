@@ -1,6 +1,12 @@
 package rest.api.playground.test.addproduct;
 
+import org.json.simple.JSONObject;
+
+import rest.api.playground.genericclass.GenericClass;
+
 public class AddProductPayload {
+	JSONObject requestParams =new JSONObject();
+	/*
 
 	public AddProductPayload(String name , String type, int price,int shipping, String upc, String description,String model,String url,String manufacturer,String image)
 	{
@@ -22,7 +28,7 @@ public class AddProductPayload {
 	private int shipping;
 	private String upc;
 	private String description;
-	private String manufacturer;
+	private String manufacturer; 
 	private String model;
 	private String url;
 	private String image;
@@ -132,4 +138,31 @@ public class AddProductPayload {
 	{
 		return "AddProductPayload [image = "+image+", shipping = "+shipping+", price = "+price+", name = "+name+", upc = "+upc+", description = "+description+", model = "+model+", type = "+type+", url = "+url+", manufacturer = "+manufacturer+"]";
 	}
+
+	 */	@SuppressWarnings("unchecked")
+	 public String fn_Create_Add_product() throws Exception
+	 {
+		 String add_productbody;
+		 try
+		 {
+			 requestParams.put("name", "toys");
+			 requestParams.put("type", "hard type");
+			 requestParams.put("upc", "12233344");
+			 requestParams.put("price", 100);
+			 requestParams.put("description", "Awsome");
+			 requestParams.put("model", "NP235");
+			 add_productbody=requestParams.toString();
+			 System.out.println(add_productbody);
+		 }
+		 catch(Exception e)
+		 {
+			 throw e;
+		 }
+		 return add_productbody;
+	 }
 }
+
+
+
+
+
