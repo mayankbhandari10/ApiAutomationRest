@@ -1,4 +1,8 @@
 package rest.api.playground.test.addproduct.test;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.junit.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.*;
 import io.restassured.RestAssured;
@@ -9,19 +13,38 @@ import rest.api.playground.genericclass.GenericClass;
 import rest.api.playground.test.addproduct.AddProductPayload;
 import rest.api.playground.testbase.TestBase;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+
 @SuppressWarnings("unused")
 public class AddProductTest extends TestBase {
+
 	String path = System.getProperty("user.dir");
 	String FinalTestDat=path+"\\TestData\\Statuscode.json";
-
-
-
+	String created;
+	String ok;
 	AddProductPayload Ad=new AddProductPayload();
 	//AddProductPayload Ad=new AddProductPayload("string", "string", 50, 5, "string", "string", "string", "string", "string", "string");
 	String baseuri=prep.getProperty("uri");
+
+
 	public AddProductTest() throws Exception {
 		super();
 
+	}
+
+	@BeforeTest
+	private void fn_load_Status_codes() throws Exception
+	{
+		JSONArray arri=GenericClass.fn_Read_TestDataStatusCode(FinalTestDat);
+		int size=arri.size();
+		for (int i=0;i<size;i++)
+		{
+			JSONObject code = (JSONObject) arri.get(i);
+			JSONObject Status = (JSONObject) code.get("Status");
+			ok = (String) Status.get("OK");
+			created = (String) Status.get("Created");
+			System.out.println(Status); //This prints each data in the block
+		}	
 	}
 
 	//ObjectMapper Obj = new ObjectMapper(); 
@@ -56,17 +79,28 @@ public class AddProductTest extends TestBase {
 	{
 		try
 		{
-			GenericClass.fn_Read_data_from_json(FinalTestDat);
+
 			RestAssured.baseURI=baseuri;
 			RequestSpecification request = RestAssured.given().contentType("application/json");
 			String request_body=Ad.fn_Create_Add_product();
-			System.out.println(request_body);
+			log.info("Request body for add new project is *****************"+request_body );
 			request.body(request_body);
 			Response response = request.post("/products");
 			int statusCode = response.getStatusCode();
 			log.info("*************The status code recieved:**************" + statusCode);
 			log.info("**********************Response body:******************* " + response.body().asString());
-			GenericClass.fn_Read_data_from_json(FinalTestDat);			 
+			String responsestring= response.body().asString();
+			System.out.println(responsestring);
+			JsonPath js=new JsonPath(responsestring);
+			log.debug("*********************Extracting the Product is*******************");
+			int product_id=js.get("id");
+			//Assert.assertEquals(statusCode, created);
+			
+			
+			System.out.println(product_id);
+
+
+
 		}
 		catch(Exception e)
 		{

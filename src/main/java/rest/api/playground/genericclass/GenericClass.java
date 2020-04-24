@@ -25,41 +25,44 @@ public class GenericClass {
 		{
 			throw e;
 		}
-
 	}
 
 	@SuppressWarnings({ "unused", "unchecked" })
 	public
-	static void fn_Read_data_from_json(String filename) throws Exception
+	static JSONArray fn_Read_TestDataStatusCode(String filename) throws Exception
 	{
+		JSONArray array = new JSONArray();
 		try
 		{
 			JSONParser jsonParser = new JSONParser();
 			FileReader reader = new FileReader(filename);
 			//Read JSON file
 			Object obj = jsonParser.parse(reader);
-			JSONArray array = new JSONArray();
+
 			array.add(obj);
 			int size=array.size();
 			System.out.println(size);
 			System.out.println(obj); //This prints the entire json file
-			for (int i=0;i<size;i++)
+
+			
+			 /*for (int i=0;i<size;i++)
 			{
 				JSONObject code = (JSONObject) array.get(i);
 				JSONObject Status = (JSONObject) code.get("Status");
 				String Unauthorized = (String) Status.get("Unauthorized");
 				String Forbidden = (String) Status.get("Forbidden");
 				System.out.println(Status); //This prints each data in the block
-
-
 			}
+			*/
+		}
+			 
+			catch(Exception e)
+			{
+				throw e;
+			}
+			return array;
 
 		}
-		catch(Exception e)
-		{
-			throw e;
-		}
+
+
 	}
-
-
-}

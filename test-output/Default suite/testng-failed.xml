@@ -6,6 +6,7 @@
       <class name="rest.api.playground.test.addproduct.test.AddProductTest">
         <methods>
           <include name="fn_verify_postRequest_using_json_simple_lib"/>
+          <include name="fn_load_Status_codes"/>
         </methods>
       </class> <!-- rest.api.playground.test.addproduct.test.AddProductTest -->
     </classes>
