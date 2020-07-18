@@ -8,6 +8,7 @@ import static io.restassured.RestAssured.*;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
 import rest.api.playground.genericclass.GenericClass;
 import rest.api.playground.test.addproduct.AddProductPayload;
@@ -95,13 +96,39 @@ public class AddProductTest extends TestBase {
 			log.debug("*********************Extracting the Product is*******************");
 			int product_id=js.get("id");
 			//Assert.assertEquals(statusCode, created);
-			
-			
-			System.out.println(product_id);
-
-
-
+	}
+		catch(Exception e)
+		{
+			throw e; 	
 		}
+	}
+	
+	@Test(priority=2, description="Add a new Product and verify it using json simple libraray")
+	private void fn_verify_postRequest_using_Deserialize_Technique() throws Exception
+	{
+		try
+		{
+
+			RestAssured.baseURI=baseuri;
+			RequestSpecification request = RestAssured.given().contentType("application/json");
+			String request_body=Ad.fn_Create_Add_product();
+			log.info("Request body for add new project is *****************"+request_body );
+			request.body(request_body);
+			Response response = request.post("/products");
+			int statusCode = response.getStatusCode();
+			ResponseBody body = response.getBody();//return the response body
+			log.info("*************The status code recieved:**************" + statusCode);
+			log.info("**********************Response body:******************* "+body);
+			AddProductSuccessResponse responsebody= body.as(AddProductSuccessResponse.class);
+			System.out.println(responsebody.createdAt);
+			System.out.println(responsebody.description);
+			System.out.println(responsebody.name);
+			
+			
+			//String responsestring= response.body().asString();
+			//System.out.println(responsestring);
+			
+	}
 		catch(Exception e)
 		{
 			throw e; 	
